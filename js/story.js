@@ -50,6 +50,10 @@ function publishStory() {
   var p = document.createElementById('p');
   p.textContent = paragraph;
   story.appendChild(p);
+
+
+}
+
 }
 
 //set up the reset button listener 
@@ -64,3 +68,4 @@ function resetStory(event) {
   event.preventDefault();
   localStorage.clear();
 }
+
