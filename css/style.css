@@ -1,11 +1,29 @@
-form {
-    width:50%;
-    margin-left:25%;
-    margin-right:25%;
-    box-sizing:border-box;
+header {
+    display:flex;
+    justify-content:center;
+}
+
+#instructions {
+    display:flex;
+    justify-content:center;
+}
+
+ol {
+    display:block;
+    list-style:decimal inside;
+}
+
+#textBoxes {
+    display:flex;
+    justify-content:center;
 }
 
 input {
     display:block;
-    width:100%;
+    margin-top:10px;
+}
+
+#buttons {
+    display:flex;
+    justify-content:center;
 }
