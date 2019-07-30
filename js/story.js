@@ -8,10 +8,11 @@ push elements to story
 Build CreateParagraph function
 */
 
-var Paragraph = function (person, adjective, place, thing) {
+
+var Paragraph = function(person,place,adjective,thing) {
     this.person = '';
-    this.adjective = '';
     this.place = '';
+    this.adjective = '';
     this.thing = '';
     this.randomSelector = function (array) {
         var random = Math.floor(Math.random * array.length);
@@ -36,11 +37,11 @@ function createParagraph() {
   var newStory = new Paragraph(people, places, adjectives, things);
   var story = document.getElementById('createStory');
 
+
   story.addEventListener('click', HandleSubmitStory);
 }
 
-//=============================================================================
-
+//CREATE PUBLISH STORY FUNCTION=========================================================================
 
 function publishStory() {
   var paragraph = createParagraph();
@@ -48,8 +49,5 @@ function publishStory() {
   var p = document.createElementById('p');
   p.textContent = paragraph;
   story.appendChild(p);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 040cd01cc694e15eebf8ba3fa1789fcaff4569e2
+
