@@ -1,23 +1,41 @@
 html {
     font-size:20px;
-}
-
-h1 {
-    font-size:3rem;
-    margin-bottom:10px;
-}
-
-#navBar {
-    display:inline-block;
-}
-
-nav {
-    font-size:.9rem;
+    background-color:grey;
 }
 
 header {
     display:flex;
     justify-content:center;
+}
+
+#navBar {
+    background-color:skyblue;
+}
+
+nav h1 {
+    font-size:5rem;
+    background-color:skyblue;
+    position:absolute;
+    top:25px;
+    left:2%;
+    border:solid black 1px;
+    padding:10px;
+}
+
+nav ul {
+    position:absolute;
+    top:0px;
+    right:0px;
+    border-bottom:solid black 1px;
+    border-left:solid black 1px;
+    background-color:skyblue;
+}
+
+nav li {
+    display:block;
+    text-align:center;
+    font-size:1.4rem;
+    padding:5px 10px 5px 10px;
 }
 
 #instructions {
@@ -26,8 +44,17 @@ header {
 }
 
 ol {
+    padding:20px;
+    margin-top:150px;
+    background-color:lightGrey;
+    font-size:1.1rem;
     display:block;
     list-style:decimal inside;
+    border:solid black 1px;
+}
+
+ol li {
+    padding:5px 0px 5px 0px;
 }
 
 form {
@@ -37,6 +64,7 @@ form {
     width:60%;
     display:flex;
     justify-content:center;
+    background-color:lightGrey;
 }
 
 #form {
@@ -45,11 +73,32 @@ form {
     width:100%;
 }
 
+#textBoxes {
+
+}
+
+#formFieldset {
+    width:60%;
+    border:solid black 1px;
+    padding:10px;
+    background-color:white;
+}
+
 input {
+    box-sizing:border-box;
     font-size:1.2rem;
-    display:flexbox;
-    justify-content:center;
-    margin-top:10px;
+    display:block;
+    margin:20px 10% 0px 10%;
+    width:80%;
+    padding:5px;
+}
+
+input:first-of-type {
+    margin-top:40px;
+}
+
+input:last-of-type {
+    margin-bottom:40px;
 }
 
 #buttons {
@@ -59,6 +108,7 @@ input {
 
 button {
     font-size:1.2rem;
+    padding:5px;
 }
 
 a {
