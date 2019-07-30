@@ -1,39 +1,47 @@
 'use strict';
 /*TODO
 Build random selector function
-
-
 Constructor function for var paragraph to have an easier time
 building story with swapping parts.
-
 get elements from form
-
 push elements to story
-
 Build CreateParagraph function
 */
+
 
 var Paragraph = function(person,place,adjective,thing) {
     this.person = '';
     this.place = '';
     this.adjective = '';
     this.thing = '';
-    this.randomSelector = function(array){
+    this.randomSelector = function (array) {
         var random = Math.floor(Math.random * array.length);
+      };
 };
-}
+
+//=============================================================================
 
 function giveRandom(array) {
   var random = array(randomSelector(array));
   return random;
 };
+//=============================================================================
 
-var selectPerson = document.getElementById('person').value;
-var selectPlace = document.getElementById('place').value;
-var selectAdjective = document.getElementById('adjective').value;
-var selectThing = document.getElementById('thing').value;
+//CREATE PARAGRAPH FUNCTION=============================================================================
+function createParagraph() {
 
-var userInput = new Paragraph(selectPerson, selectAdjective, selectPlace, selectThing);
+  var people = JSON.Parse(localStorage.getItem('person'));
+  var places = JSON.Parse(localStorage.getItem('place'));
+  var adjectives = JSON.Parse(localStorage.getItem('adjective'));
+  var things = JSON.Parse(localStorage.getItem('thing'));
+  var newStory = new Paragraph(people, places, adjectives, things);
+  var story = document.getElementById('createStory');
+
+
+  story.addEventListener('click', HandleSubmitStory);
+}
+
+//CREATE PUBLISH STORY FUNCTION=========================================================================
 
 function publishStory() {
   var paragraph = createParagraph();
@@ -42,3 +50,4 @@ function publishStory() {
   p.textContent = paragraph;
   story.appendChild(p);
 }
+
