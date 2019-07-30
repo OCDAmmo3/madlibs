@@ -11,13 +11,15 @@
     <body>
         <header>
             <h1>____Libs</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Add More Stuff to the Story</a></li>    
-                    <li><a href="story.html">Go Back to Story</a></li>
-                    <li><a href="about.html">About the Team</a></li>
-                </ul>
-            </nav>
+            <div id="navBar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Add More Stuff to the Story</a></li>    
+                        <li><a href="story.html">Go Back to Story</a></li>
+                        <li><a href="about.html">About the Team</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <section id="instructions">
             <ol>
@@ -29,13 +31,17 @@
         </section>
         <section id="form">
             <form>
-                <fieldset>
-                    <input type="text" class="textInput" id="person-input" placeholder="Person">
-                    <input type="text" class="textInput" id="place-input" placeholder="Place">
-                    <input type="text" class="textInput" id="thing-input" placeholder="Object">
-                    <input type="text" class="textInput" id="adjective-input" placeholder="Adjective">
-                    <button type="submit" class="buttonInput" id="addInputs">Add to Story</button>
-                    <button type="submit" class="buttonInput" id="createStory">Give me a Story</button>
+                <fieldset id="formFieldset">
+                    <div id="textBoxes">
+                        <input type="text" class="textInput" id="person-input" placeholder="Person">
+                        <input type="text" class="textInput" id="place-input" placeholder="Place">
+                        <input type="text" class="textInput" id="thing-input" placeholder="Object">
+                        <input type="text" class="textInput" id="adjective-input" placeholder="Adjective">
+                    </div>
+                    <div id="buttons">
+                        <button type="submit" class="buttonInput" id="addInputs">Add to Story</button>
+                        <button type="submit" class="buttonInput" id="createStory"><a href="story.html">Give me a Story</a></button>
+                    </div>
                 </fieldset>
             </form>
         </section>

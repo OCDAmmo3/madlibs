@@ -1,11 +1,67 @@
+html {
+    font-size:20px;
+}
+
+h1 {
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+#navBar {
+    display:inline-block;
+}
+
+nav {
+    font-size:.9rem;
+}
+
+header {
+    display:flex;
+    justify-content:center;
+}
+
+#instructions {
+    display:flex;
+    justify-content:center;
+}
+
+ol {
+    display:block;
+    list-style:decimal inside;
+}
+
 form {
-    width:50%;
-    margin-left:25%;
-    margin-right:25%;
-    box-sizing:border-box;
+    margin-top:20px;
+    padding:10px;
+    border:solid black 1px;
+    width:60%;
+    display:flex;
+    justify-content:center;
+}
+
+#form {
+    display:flex;
+    justify-content:center;
+    width:100%;
 }
 
 input {
-    display:block;
-    width:100%;
+    font-size:1.2rem;
+    display:flexbox;
+    justify-content:center;
+    margin-top:10px;
+}
+
+#buttons {
+    display:flex;
+    justify-content:center;
+}
+
+button {
+    font-size:1.2rem;
+}
+
+a {
+    text-decoration:none;
+    color:black;
 }
