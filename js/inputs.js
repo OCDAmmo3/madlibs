@@ -35,11 +35,15 @@ function updateArray() {
 //==============================================================================
 
 //handleSubmitInput Function====================================================
-//TODO: Prevent default action
+function handleSubmitInput(event) {
+  //TODO: Prevent default action
+  event.preventDefault();
 
-
-//TODO: Call the functions updateArray(), saveToLocalStorage(), clearForm()
-
+  //TODO: Call the functions updateArray(), saveToLocalStorage(), clearForm()
+  updateArray();
+  saveToLocalStorage();
+  clearForm();
+}
 
 //==============================================================================
 
