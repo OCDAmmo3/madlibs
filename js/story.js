@@ -13,7 +13,7 @@ push elements to story
 Build CreateParagraph function
 */
 
-var Paragraph = function(person,adjective,place,thing) {
+var Paragraph = function (person, adjective, place, thing) {
     this.person = '';
     this.adjective = '';
     this.place = '';
