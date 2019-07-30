@@ -25,6 +25,7 @@ function giveRandom(array) {
   var random = array(randomSelector(array));
   return random;
 };
+
 //=============================================================================
 
 //CREATE PARAGRAPH FUNCTION=============================================================================
@@ -51,3 +52,15 @@ function publishStory() {
   story.appendChild(p);
 }
 
+//set up the reset button listener 
+//TODO add event listener for reset button
+function resetButton() {
+var resetButton = document.getElementById('reset');
+resetButton.addEventListener('click', resetStory);
+}
+
+//TODO add the reset button to clear story and return to index page
+function resetStory(event) {
+  event.preventDefault();
+  localStorage.clear();
+}
