@@ -68,13 +68,13 @@ function clearForm() {
   for (var i in input) {
     clear.textContent = '';
   }
-    // =======OR========
-    // for (var i in input) {
-    //   clear.remove();
-    // }
-    //
-    //TODO: Remember to replace with an empty string
-  }
+  // =======OR========
+  // for (var i in input) {
+  //   clear.remove();
+  // }
+  //
+  //TODO: Remember to replace with an empty string
+}
 
 //==============================================================================
 
