@@ -79,3 +79,34 @@
 <li>Animations as text appears</li>
 <li>Moving pictures</li>
 <li>Animation in background</li>
+
+<hr/>
+<br>
+<h2> MVP</h2>
+<ol>
+<li>Create form structure</li>
+<li>Comment TODOs on input.js</li>
+<li>Comment TODOs on story.js</li>
+<li>Initialize global variables</li>
+<li>Create storyArray on preset.js</li>
+<li>Create updateArray function<li>
+<li>Create saveToLocalStorage function</li>
+<li>Create handleSubmitInput function</li>
+<li> Create randomSelector function</li>
+<li>Create object with property and method </li>
+<li>Create handleSubmitStory function</li>
+<li>Create publishStory function </li>
+<li>Add event listener for add input </li>
+<li>Create wireframe</li>
+<li>Create the function createParagraph</li>
+<li>Create reset button function</li>
+<li>Create length change function</li>
+</ol>
+<br>
+<h2>Stretch</h2>
+<ol>
+<li>Multiple player input</li>
+<li>Adding button to change story length</li>
+<li>Storybook feel</li>
+<li>Accessibility -- adding screen readers</li>
+</ol>
