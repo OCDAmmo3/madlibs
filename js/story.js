@@ -8,10 +8,11 @@ push elements to story
 Build CreateParagraph function
 */
 
-var Paragraph = function (person, adjective, place, thing) {
+
+var Paragraph = function(person,place,adjective,thing) {
     this.person = '';
-    this.adjective = '';
     this.place = '';
+    this.adjective = '';
     this.thing = '';
     this.randomSelector = function (array) {
         var random = Math.floor(Math.random * array.length);
@@ -24,6 +25,7 @@ function giveRandom(array) {
   var random = array(randomSelector(array));
   return random;
 };
+
 //=============================================================================
 
 //CREATE PARAGRAPH FUNCTION=============================================================================
@@ -36,11 +38,11 @@ function createParagraph() {
   var newStory = new Paragraph(people, places, adjectives, things);
   var story = document.getElementById('createStory');
 
+
   story.addEventListener('click', HandleSubmitStory);
 }
 
-//=============================================================================
-
+//CREATE PUBLISH STORY FUNCTION=========================================================================
 
 function publishStory() {
   var paragraph = createParagraph();
@@ -49,4 +51,21 @@ function publishStory() {
   p.textContent = paragraph;
   story.appendChild(p);
 
+
 }
+
+}
+
+//set up the reset button listener 
+//TODO add event listener for reset button
+function resetButton() {
+var resetButton = document.getElementById('reset');
+resetButton.addEventListener('click', resetStory);
+}
+
+//TODO add the reset button to clear story and return to index page
+function resetStory(event) {
+  event.preventDefault();
+  localStorage.clear();
+}
+
