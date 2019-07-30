@@ -15,26 +15,28 @@ var adjective = [];
 
 //updateArray Function==========================================================
 //TODO: Create variables to hold the input data
+function updateArray() {
+  var personInput = document.getElementById('person-input');
+  var placeInput = document.getElementById('place-input');
+  var objectInput = document.getElementById('object-input');
+  var adjectiveInput = document.getElementById('adjective-input');
+  var submitInput = document.getElementById('addInputs');
+  //TODO: Push the inputs into the respective arrays
 
-var personInput = document.getElementById('person-input');
-var placeInput = document.getElementById('place-input');
-var objectInput = document.getElementById('object-input');
-var adjectiveInput = document.getElementById('adjective-input');
-var submitInput = document.getElementById('addInputs');
-//TODO: Push the inputs into the respective arrays
+  people.push(personInput);
+  place.push(placeInput);
+  thing.push(objectInput);
+  adjective.push(adjectiveInput);
 
-people.push(personInput);
-place.push(placeInput);
-thing.push(objectInput);
-adjective.push(adjectiveInput);
-
-//TODO: Add event listener for the click
-submitInput.addEventListener('click', handleSubmitInput);
+  //TODO: Add event listener for the click
+  submitInput.addEventListener('click', handleSubmitInput);
+}
 
 //==============================================================================
 
 //handleSubmitInput Function====================================================
 //TODO: Prevent default action
+
 
 //TODO: Call the functions updateArray(), saveToLocalStorage(), clearForm()
 
