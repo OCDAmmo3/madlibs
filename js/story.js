@@ -27,7 +27,7 @@ function giveRandom(array) {
   var random = array(randomSelector(array));
   return random;
 };
-
+// is this DRY enough??
 var selectPerson = document.getElementById('person').value;
 var selectAdjective = document.getElementById('adjective').value;
 var selectPlace = document.getElementById('place').value;
@@ -41,4 +41,17 @@ function publishStory() {
   var p = document.createElementById('p');
   p.textContent = paragraph;
   story.appendChild(p);
+}
+
+//set up the reset button listener 
+//TODO add event listener for reset button
+function resetButton() {
+var resetButton = document.getElementById('reset');
+resetButton.addEventListener('click', resetStory);
+}
+
+//TODO add the reset button to clear story and return to index page
+function resetStory(event) {
+  event.preventDefault();
+  localStorage.clear();
 }
