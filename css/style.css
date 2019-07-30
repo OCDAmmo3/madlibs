@@ -1,0 +1,11 @@
+form {
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    box-sizing:border-box;
+}
+
+input {
+    display:block;
+    width:100%;
+}
