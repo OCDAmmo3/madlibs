@@ -68,21 +68,24 @@ function clearForm() {
   for (var i in input) {
     clear.textContent = '';
   }
-    // =======OR========
-    // for (var i in input) {
-    //   clear.remove();
-    // }
-    //
-    //TODO: Remember to replace with an empty string
-  }
+  // =======OR========
+  // for (var i in input) {
+  //   clear.remove();
+  // }
+  //
+  //TODO: Remember to replace with an empty string
+}
 
 //==============================================================================
 
 //handleSubmitStory Function====================================================
-//TODO:Prevent default action
-
-//TODO:Call the functions createParagraph() and publishStory()
-
+function handleSubmitStory(event) {
+  //TODO:Prevent default action
+  event.preventDefault();
+  //TODO:Call the functions createParagraph() and publishStory()
+  createParagraph();
+  publishStory();
+}
 
 //==============================================================================
 
