@@ -12,18 +12,16 @@ push elements to story
 Build CreateParagraph function
 */
 'use strict'
-function Paragraph() {
+function Paragraph(person,adjective,place,thing) {
     this.person= '',
     this.adjective= '',
     this.place= '',
     this.thing= '',
-    randomSelector= function(array){
+    randomSelector = function(array){
     var random = Math.floor(Math.random * array.length);
 };
 }
 
-
-function randomSelector(array)
 function giveRandom(array){
     var random = array(randomSelector(array));
     return random
@@ -34,3 +32,12 @@ var selectAdjective = document.getElementById('adjective').value;
 var selectPlace = document.getElementById('place').value;
 var selectThing = document.getElementById('thing').value;
 
+var userInput = new Paragraph(selectPerson, selectAdjective, selectPlace, selectThing);
+
+function publishStory(){
+    var paragraph = createParagraph();
+    var story = document.getElementById('story');
+    var p = document.createElementById('p');
+    p.textContent= paragraph;
+    story.appendChild(p);
+}
