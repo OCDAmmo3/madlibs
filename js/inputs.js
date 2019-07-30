@@ -16,6 +16,11 @@ var adjective = [];
 //updateArray Function==========================================================
 //TODO: Create variables to hold the input data
 
+var person = document.getElementById('person-input');
+var place = document.getElementById('place-input');
+var object = document.getElementById('object-input');
+var adjective = document.getElementById('adjective-input');
+
 //TODO: Push the inputs into the respective arrays
 
 //TODO: Add event listener for the click
