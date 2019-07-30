@@ -17,7 +17,7 @@ function Paragraph(person,adjective,place,thing) {
     this.adjective= '',
     this.place= '',
     this.thing= '',
-    randomSelector= function(array){
+    randomSelector = function(array){
     var random = Math.floor(Math.random * array.length);
 };
 }
