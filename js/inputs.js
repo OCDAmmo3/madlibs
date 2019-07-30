@@ -20,12 +20,17 @@
 //==============================================================================
 
 //handleSubmitInput Function====================================================
-//TODO:
+//TODO: Prevent default action
+
+//TODO: Call the functions updateArray(), saveToLocalStorage(), clearForm()
 
 
 //==============================================================================
 
 //saveToLocalStorage Function===================================================
+//TODO: Store the input arrays in local storage
+
+//TODO: remember to stringify the arrays
 
 //==============================================================================
 
