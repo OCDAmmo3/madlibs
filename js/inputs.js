@@ -1,3 +1,5 @@
+'use strict';
+
 //DATA=========================================================================
 
 //INITALIZE GLOBAL VARIABLES====================================================
@@ -21,28 +23,34 @@ var adjective = [];
 //==============================================================================
 
 //handleSubmitInput Function====================================================
-//TODO:
+//TODO: Prevent default action
+
+//TODO: Call the functions updateArray(), saveToLocalStorage(), clearForm()
 
 
 //==============================================================================
 
 //saveToLocalStorage Function===================================================
+//TODO: Store the input arrays in local storage
+
+//TODO: remember to stringify the arrays
 
 //==============================================================================
 
 //clearForm Function============================================================
+//TODO: Create a variable to hold the querySelectorAll information
+
+//TODO:Create a loop that removes the content
+
+//TODO: Remember to replace with an empty string
 
 //==============================================================================
 
 //handleSubmitStory Function====================================================
+//TODO:Prevent default action
 
-//==============================================================================
+//TODO:Call the functions createParagraph() and publishStory()
 
-//createParagraph Function======================================================
-
-//==============================================================================
-
-//publishStory Function=========================================================
 
 //==============================================================================
 
