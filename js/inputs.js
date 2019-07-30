@@ -20,7 +20,7 @@ var personInput = document.getElementById('person-input');
 var placeInput = document.getElementById('place-input');
 var objectInput = document.getElementById('object-input');
 var adjectiveInput = document.getElementById('adjective-input');
-
+var submitInput = document.getElementById('addInputs');
 //TODO: Push the inputs into the respective arrays
 
 people.push(personInput);
@@ -29,6 +29,7 @@ thing.push(objectInput);
 adjective.push(adjectiveInput);
 
 //TODO: Add event listener for the click
+submitInput.addEventListener('click', handleSubmitInput);
 
 //==============================================================================
 
