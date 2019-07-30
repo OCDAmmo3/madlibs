@@ -1,3 +1,4 @@
+'use strict';
 /*TODO
 Build random selector function
 
@@ -11,14 +12,14 @@ push elements to story
 
 Build CreateParagraph function
 */
-'use strict'
-function Paragraph(person,adjective,place,thing) {
-    this.person= '',
-    this.adjective= '',
-    this.place= '',
-    this.thing= '',
-    randomSelector = function(array){
-    var random = Math.floor(Math.random * array.length);
+
+var Paragraph = function(person,adjective,place,thing) {
+    this.person = '';
+    this.adjective = '';
+    this.place = '';
+    this.thing = '';
+    this.randomSelector = function(array){
+        var random = Math.floor(Math.random * array.length);
 };
 }
 
