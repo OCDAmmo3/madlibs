@@ -48,8 +48,5 @@ function publishStory() {
   var p = document.createElementById('p');
   p.textContent = paragraph;
   story.appendChild(p);
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 040cd01cc694e15eebf8ba3fa1789fcaff4569e2
