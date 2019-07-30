@@ -95,7 +95,7 @@ function clearForm() {
   //
   //TODO: Remember to replace with an empty string
 }
-
+ 
 //==============================================================================
 
 //handleSubmitStory Function====================================================
