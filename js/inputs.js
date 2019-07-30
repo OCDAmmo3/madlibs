@@ -61,11 +61,20 @@ function saveToLocalStorage() {
 //==============================================================================
 
 //clearForm Function============================================================
-//TODO: Create a variable to hold the querySelectorAll information
-
-//TODO:Create a loop that removes the content
-
-//TODO: Remember to replace with an empty string
+function clearForm() {
+  //TODO: Create a variable to hold the querySelectorAll information
+  var clear = document.QuerySelectorAll('input');
+  //TODO:Create a loop that removes the content
+  for (var i in input) {
+    clear.textContent = '';
+  }
+    // =======OR========
+    // for (var i in input) {
+    //   clear.remove();
+    // }
+    //
+    //TODO: Remember to replace with an empty string
+  }
 
 //==============================================================================
 
