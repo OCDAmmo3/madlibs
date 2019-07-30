@@ -35,21 +35,25 @@ function updateArray() {
 //==============================================================================
 
 //handleSubmitInput Function====================================================
-//TODO: Prevent default action
+function handleSubmitInput(event) {
+  //TODO: Prevent default action
+  event.preventDefault();
 
-
-//TODO: Call the functions updateArray(), saveToLocalStorage(), clearForm()
-
+  //TODO: Call the functions updateArray(), saveToLocalStorage(), clearForm()
+  updateArray();
+  saveToLocalStorage();
+  clearForm();
+}
 
 //==============================================================================
 
 //saveToLocalStorage Function===================================================
 //TODO: Store the input arrays in local storage
 function saveToLocalStorage() {
-    localStorage.setItem("person-input", JSON.Stringify(people));
-    localStorage.setItem("place-input", JSON.Stringify(places));
-    localStorage.setItem("thing-input", JSON.Stringify(things));
-    localStorage.setItem("adjective-input", JSON.Stringify(adjectives));
+  localStorage.setItem("person-input", JSON.Stringify(people));
+  localStorage.setItem("place-input", JSON.Stringify(places));
+  localStorage.setItem("thing-input", JSON.Stringify(things));
+  localStorage.setItem("adjective-input", JSON.Stringify(adjectives));
 }
 
 //TODO: remember to stringify the arrays
@@ -57,11 +61,20 @@ function saveToLocalStorage() {
 //==============================================================================
 
 //clearForm Function============================================================
-//TODO: Create a variable to hold the querySelectorAll information
-
-//TODO:Create a loop that removes the content
-
-//TODO: Remember to replace with an empty string
+function clearForm() {
+  //TODO: Create a variable to hold the querySelectorAll information
+  var clear = document.QuerySelectorAll('input');
+  //TODO:Create a loop that removes the content
+  for (var i in input) {
+    clear.textContent = '';
+  }
+    // =======OR========
+    // for (var i in input) {
+    //   clear.remove();
+    // }
+    //
+    //TODO: Remember to replace with an empty string
+  }
 
 //==============================================================================
 
