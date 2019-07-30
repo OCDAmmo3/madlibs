@@ -4,9 +4,9 @@
 
 //INITALIZE GLOBAL VARIABLES====================================================
 var people = [];
-var place = [];
-var thing = [];
-var adjective = [];
+var places = [];
+var things = [];
+var adjectives = [];
 //==============================================================================
 
 //==============================================================================
@@ -45,6 +45,12 @@ function updateArray() {
 
 //saveToLocalStorage Function===================================================
 //TODO: Store the input arrays in local storage
+function saveToLocalStorage() {
+    localStorage.setItem("person-input", JSON.Stringify(people));
+    localStorage.setItem("place-input", JSON.Stringify(places));
+    localStorage.setItem("thing-input", JSON.Stringify(things));
+    localStorage.setItem("adjective-input", JSON.Stringify(adjectives));
+}
 
 //TODO: remember to stringify the arrays
 
