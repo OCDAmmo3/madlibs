@@ -81,15 +81,11 @@ function clearForm() {
 //handleSubmitStory Function====================================================
 function handleSubmitStory(event) {
   //TODO:Prevent default action
-  event.preventDefaul();
+  event.preventDefault();
   //TODO:Call the functions createParagraph() and publishStory()
   createParagraph();
   publishStory();
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 69aba4f2e1e951e9ed19cf3f295a375ecf4f7a62
 
 //==============================================================================
 
