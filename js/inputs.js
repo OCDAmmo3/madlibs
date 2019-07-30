@@ -50,10 +50,10 @@ function handleSubmitInput(event) {
 //saveToLocalStorage Function===================================================
 //TODO: Store the input arrays in local storage
 function saveToLocalStorage() {
-    localStorage.setItem("person-input", JSON.Stringify(people));
-    localStorage.setItem("place-input", JSON.Stringify(places));
-    localStorage.setItem("thing-input", JSON.Stringify(things));
-    localStorage.setItem("adjective-input", JSON.Stringify(adjectives));
+  localStorage.setItem("person-input", JSON.Stringify(people));
+  localStorage.setItem("place-input", JSON.Stringify(places));
+  localStorage.setItem("thing-input", JSON.Stringify(things));
+  localStorage.setItem("adjective-input", JSON.Stringify(adjectives));
 }
 
 //TODO: remember to stringify the arrays
@@ -70,13 +70,10 @@ function saveToLocalStorage() {
 //==============================================================================
 
 //handleSubmitStory Function====================================================
-function handleSubmitStory(event){
 //TODO:Prevent default action
-event.preventDefaul();
+
 //TODO:Call the functions createParagraph() and publishStory()
-createParagraph();
-publishStory();
-}
+
 
 //==============================================================================
 
