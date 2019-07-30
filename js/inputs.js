@@ -28,18 +28,9 @@ function updateArray() {
   console.log(`Line 28: submit button is selected`);
   //TODO: Push the inputs into the respective arrays
 
-  people.push(personInput);
-  console.log(`Line 32: The person array contains: ${people}`);
-  places.push(placeInput);
-  console.log(`Line 34: The place array contains: ${place}`);
-  things.push(objectInput);
-  console.log(`Line 36: The things array contains: ${things}`);
-  adjectives.push(adjectiveInput);
-  console.log(`Line 38: The adjectives array contains: ${adjectives}`);
-
+  var story = document.getElementById("temporary");
+  story.addEventListener("submit", handleSubmitInput);
   //TODO: Add event listener for the click
-  submitInput.addEventListener('click', handleSubmitInput);
-  console.log('Line 42: Event listener listening for input click');
 }
 
 //==============================================================================
@@ -49,14 +40,28 @@ function handleSubmitInput(event) {
   //TODO: Prevent default action
   event.preventDefault();
   console.log('Line 51: Default action prevented');
+  console.log(event);
+  var person = document.getElementById('person-input').value;
+  var place = document.getElementById('place-input').value;
+  var adjective = document.getElementById('adjective-input').value;
+  var thing = document.getElementById('thing-input').value;
 
+  var newInfo = new Paragraph(person, place, adjective, thing);
+
+  people.push(person);
+  places.push(place);
+  things.push(thing);
+  adjectives.push(adjective);
+
+  this.reset();
   //TODO: Call the functions updateArray(), saveToLocalStorage(), clearForm()
   updateArray();
+
   console.log('Line 55: updateArray called');
   saveToLocalStorage();
   console.log('Line 57: saveToLocalStorage called');
-  clearForm();
-  console.log('Line 59: clearForm called');
+  // clearForm();
+  // console.log('Line 59: clearForm called');
 }
 
 //==============================================================================
@@ -64,14 +69,14 @@ function handleSubmitInput(event) {
 //saveToLocalStorage Function===================================================
 //TODO: Store the input arrays in local storage
 function saveToLocalStorage() {
-  localStorage.setItem("person-input", JSON.Stringify(people));
-  console.log(`Line 68: The local storage now holds within the people array: ${JSON.Parse(localStorage.getItem('people'))}`);
-  localStorage.setItem("place-input", JSON.Stringify(places));
-  console.log(`Line 70: The local storage now holds within the places array: ${JSON.Parse(localStorage.getItem('places'))}`);
-  localStorage.setItem("thing-input", JSON.Stringify(things));
-  console.log(`Line 72: The local storage now holds within the things array: ${JSON.Parse(localStorage.getItem('things'))}`);
-  localStorage.setItem("adjective-input", JSON.Stringify(adjectives));
-  console.log(`Line 74: The local storage now holds within the adjectives array: ${JSON.Parse(localStorage.getItem('adjectives'))}`);
+  localStorage.setItem("person", JSON.stringify(people));
+  console.log(`Line 68: The local storage now holds within the people array: ${JSON.parse(localStorage.getItem('person'))}`);
+  localStorage.setItem("place", JSON.stringify(places));
+  console.log(`Line 70: The local storage now holds within the places array: ${JSON.parse(localStorage.getItem('place'))}`);
+  localStorage.setItem("thing", JSON.stringify(things));
+  console.log(`Line 72: The local storage now holds within the things array: ${JSON.parse(localStorage.getItem('thing'))}`);
+  localStorage.setItem("adjective", JSON.stringify(adjectives));
+  console.log(`Line 74: The local storage now holds within the adjectives array: ${JSON.parse(localStorage.getItem('adjective'))}`);
 }
 
 //TODO: remember to stringify the arrays
@@ -79,22 +84,22 @@ function saveToLocalStorage() {
 //==============================================================================
 
 //clearForm Function============================================================
-function clearForm() {
-  //TODO: Create a variable to hold the querySelectorAll information
-  var clear = document.QuerySelectorAll('input');
-  console.log('Line 85: The inputs have been selected');
-  //TODO:Create a loop that removes the content
-  for (var i in input) {
-    clear.textContent = '';
-    console.log(`Line 89: thie input has been cleared here's proof : ${clear[i]}`);
-  }
+// function clearForm() {
+//   //TODO: Create a variable to hold the querySelectorAll information
+//   var clear = document.querySelectorAll('input');
+//   console.log('Line 85: The inputs have been selected');
+//   //TODO:Create a loop that removes the content
+//   for (var i in clear) {
+//     clear.textContent = '';
+//     console.log(`Line 89: this input has been cleared here's proof : ${clear[i]}`);
+//   }
   // =======OR========
   // for (var i in input) {
   //   clear.remove();
   // }
   //
   //TODO: Remember to replace with an empty string
-}
+// }
  
 //==============================================================================
 
@@ -115,6 +120,7 @@ function handleSubmitStory(event) {
 //==============================================================================
 
 //EXECUTABLES===================================================================
+updateArray();
 
 //==============================================================================
 

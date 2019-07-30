@@ -31,15 +31,11 @@ function giveRandom(array) {
 //CREATE PARAGRAPH FUNCTION=============================================================================
 function createParagraph() {
 
-  var people = JSON.Parse(localStorage.getItem('person'));
-  var places = JSON.Parse(localStorage.getItem('place'));
-  var adjectives = JSON.Parse(localStorage.getItem('adjective'));
-  var things = JSON.Parse(localStorage.getItem('thing'));
+  var people = JSON.parse(localStorage.getItem('person'));
+  var places = JSON.parse(localStorage.getItem('place'));
+  var adjectives = JSON.parse(localStorage.getItem('adjective'));
+  var things = JSON.parse(localStorage.getItem('thing'));
   var newStory = new Paragraph(people, places, adjectives, things);
-  var story = document.getElementById('createStory');
-
-
-  story.addEventListener('click', HandleSubmitStory);
 }
 
 //CREATE PUBLISH STORY FUNCTION=========================================================================
@@ -51,9 +47,8 @@ function publishStory() {
   p.textContent = paragraph;
   story.appendChild(p);
 
-
-}
-
+  var story = document.getElementById('createStory');
+  story.addEventListener('button', handleSubmitStory);
 }
 
 //set up the reset button listener 

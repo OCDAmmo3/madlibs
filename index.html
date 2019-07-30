@@ -30,21 +30,22 @@
             </ol>
         </section>
         <section id="form">
-            <form>
+            <form id="temporary">
                 <fieldset id="formFieldset">
                     <div id="textBoxes">
-                        <input type="text" class="textInput" id="person-input" placeholder="Person">
-                        <input type="text" class="textInput" id="place-input" placeholder="Place">
-                        <input type="text" class="textInput" id="thing-input" placeholder="Object">
-                        <input type="text" class="textInput" id="adjective-input" placeholder="Adjective">
+                        <input type="text" class="textInput" name="people" id="person-input" placeholder="Person">
+                        <input type="text" class="textInput" name="place" id="place-input" placeholder="Place">
+                        <input type="text" class="textInput" name="thing" id="thing-input" placeholder="Object">
+                        <input type="text" class="textInput" name="adjective" id="adjective-input" placeholder="Adjective">
                     </div>
                     <div id="buttons">
-                        <button type="submit" class="buttonInput" id="addInputs">Add to Story</button>
-                        <button type="submit" class="buttonInput" id="createStory"><a href="story.html">Give me a Story</a></button>
+                        <input type="submit" class="buttonInput" id="addInputs">
                     </div>
                 </fieldset>
             </form>
+            <a href="story.html"><button class="buttonInput" id="createStory">Give me a Story</button></a>
         </section>
         <script src="js/inputs.js"></script>
+        <script src="js/story.js"></script>
     </body>
 </html>
