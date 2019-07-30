@@ -101,6 +101,7 @@
 <li>Create the function createParagraph</li>
 <li>Create reset button function</li>
 <li>Create length change function</li>
+<li>Add if statement to require 
 </ol>
 <br>
 <h2>Stretch</h2>
