@@ -86,6 +86,10 @@ function handleSubmitStory(event) {
   createParagraph();
   publishStory();
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 69aba4f2e1e951e9ed19cf3f295a375ecf4f7a62
 
 //==============================================================================
 
