@@ -37,20 +37,26 @@ function createParagraph() {
   var things = JSON.parse(localStorage.getItem('thing'));
   var newStory = new Paragraph(people, places, adjectives, things);
 } console.log('newStory created line 39');
+//IMPORTING HANDLE SUBMIT STORY FUNCTION FROM INPUT JS =================================================
+var importStory = require('./input.js');
+var importedFunction = importStory.handleSubmitStory();  
+console.log('line 43: importedFunction called handle submit story');
 
 //CREATE PUBLISH STORY FUNCTION=========================================================================
 
 function publishStory() {
   var paragraph = createParagraph();
   var story = document.getElementById('storyBlock');
-  var p = document.createElementById('p');
+  var p = document.createElement('p');
   p.textContent = paragraph;
   story.appendChild(p);
 
   story.addEventListener('button', handleSubmitStory);
-}console.log('publish story function - line 51');
-console.log(p.textContent);
-console.log(story);
+  console.log('publish story function - line 51');
+  console.log(p.textContent);
+  console.log(story);
+
+}
 
 
 //set up resetButton==================================================================================
