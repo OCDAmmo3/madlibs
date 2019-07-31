@@ -120,3 +120,47 @@ img {
     width:300px;
     height:auto;
 }
+
+#abouts {
+    margin-top:200px;
+}
+
+#aboutJon {
+    box-sizing:border-box;
+    width:100%;
+}
+
+#infoJon {
+    float:left;
+}
+
+#aboutTerra {
+    box-sizing:border-box;
+    width:100%;
+}
+
+#infoTerra {
+    float:right;
+}
+
+#aboutJames {
+    box-sizing:border-box;
+    width:100%;
+}
+
+#infoJames {
+    float:left;
+}
+
+#aboutAkira {
+    box-sizing:border-box;
+    width:100%;
+}
+
+#infoAkira {
+    float:right;
+}
+
+h2 {
+    font-size:2rem;
+}
