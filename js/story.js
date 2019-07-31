@@ -36,20 +36,21 @@ function createParagraph() {
   var adjectives = JSON.parse(localStorage.getItem('adjective'));
   var things = JSON.parse(localStorage.getItem('thing'));
   var newStory = new Paragraph(people, places, adjectives, things);
-}
+} console.log('newStory created line 39');
 
 //CREATE PUBLISH STORY FUNCTION=========================================================================
 
 function publishStory() {
   var paragraph = createParagraph();
-  var story = document.getElementById('story');
+  var story = document.getElementById('storyBlock');
   var p = document.createElementById('p');
   p.textContent = paragraph;
   story.appendChild(p);
 
-  var story = document.getElementById('createStory');
   story.addEventListener('button', handleSubmitStory);
-}
+}console.log('publish story function - line 51');
+console.log(p.textContent);
+console.log(story);
 
 
 //set up resetButton==================================================================================
