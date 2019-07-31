@@ -114,7 +114,6 @@ function handleSubmit(event) {
   publishStory();
   console.log('line 110: publishStory called');
 
-
   event.preventDefault();
   console.log('Line 105: Default event prevented');
   //TODO:Call the functions createParagraph() and publishStory()

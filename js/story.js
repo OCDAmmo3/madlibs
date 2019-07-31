@@ -32,6 +32,7 @@ function createParagraph() {
   var adjectives = JSON.parse(localStorage.getItem('adjective'));
   console.log(`Line 33: adjectives contains ${adjectives}`);
   var things = JSON.parse(localStorage.getItem('thing'));
+
   console.log(`Line 35: things contains ${things}`);
   var newStory = new Paragraph(person, adjective, place, thing);
   console.log(`Line 37: newStory contains person:${newStory.person}`);
@@ -92,6 +93,14 @@ function createParagraph() {
 // console.log(`Line 89: Testing paragraph function`);
 
 //=============================================================================
+
+  var newStory = new Paragraph(people, places, adjectives, things);
+} console.log('newStory created line 39');
+//IMPORTING HANDLE SUBMIT STORY FUNCTION FROM INPUT JS =================================================
+// var importStory = require('./input.js');
+// var importedFunction = importStory.handleSubmitStory();  
+// console.log('line 43: importedFunction called handle submit story');
+
 
 //PUBLISH STORY FUNCTION=============================================================================
 

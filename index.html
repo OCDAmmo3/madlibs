@@ -22,26 +22,44 @@
         <section id="instructions">
             <ol>
                 <li>First things first - put in your submissions. We need people, places, object, and adjectives.</li>
-                <li>Once you have the answers you'd like to add, hit the "Add to Story" button. This will add them to the story.</li>
-                <li>You can add another set of answers if you'd like, or you can keep those and move on.</li>
-                <li>Once you're ready, hit the "Give me a Story" button and read your wacky story!</li>
+                <li>Try to think outside the box. The more fun your choices are, the weirder the story.</li>
+                <li>When you think you have the best entires, hit the "Give me a Story" button and enjoy!</li>
             </ol>
         </section>
         <section id="form">
             <form id="temporary">
                 <fieldset id="formFieldset">
-                    <div id="textBoxes">
-                        <input type="text" class="textInput" name="people" id="person-input" placeholder="Person">
-                        <input type="text" class="textInput" name="place" id="place-input" placeholder="Place">
-                        <input type="text" class="textInput" name="thing" id="thing-input" placeholder="Object">
-                        <input type="text" class="textInput" name="adjective" id="adjective-input" placeholder="Adjective">
-                    </div>
-                    <div id="buttons">
-                        <input type="submit" class="buttonInput" id="addInputs">
-                    </div>
+                    <legend class="legend">People</legend>
+                        <h2>List three people</h2>
+                        <input type="text" class="textInput" name="people" id="person-input" placeholder="Person 1">
+                        <input type="text" class="textInput" name="people" id="person-input" placeholder="Person 2">
+                        <input type="text" class="textInput" name="people" id="person-input" placeholder="Person 3">
                 </fieldset>
+                <fieldset id="formFieldset">
+                    <legend class="legend">Locations</legend>
+                        <h2>List three places</h2>
+                        <input type="text" class="textInput" name="place" id="place-input" placeholder="Location 1">
+                        <input type="text" class="textInput" name="place" id="place-input" placeholder="Location 2">
+                        <input type="text" class="textInput" name="place" id="place-input" placeholder="Location 3">
+                </fieldset>
+                <fieldset id="formFieldset">
+                    <legend class="legend">Objects</legend>
+                        <h2>List three objects</h2>
+                        <input type="text" class="textInput" name="thing" id="thing-input" placeholder="Object 1">
+                        <input type="text" class="textInput" name="thing" id="thing-input" placeholder="Object 2">
+                        <input type="text" class="textInput" name="thing" id="thing-input" placeholder="Object 3">
+                </fieldset>
+                <fieldset id="formFieldset">
+                    <legend class="legend">Adjectives</legend>
+                        <h2>List three adjectives</h2>
+                        <input type="text" class="textInput" name="adjective" id="adjective-input" placeholder="Adjective 1">
+                        <input type="text" class="textInput" name="adjective" id="adjective-input" placeholder="Adjective 2">
+                        <input type="text" class="textInput" name="adjective" id="adjective-input" placeholder="Adjective 3">
+                </fieldset>
+                    <div id="buttons">
+                        <button class="buttonInput"  name="submit" id="createStory">Give me a Story</button>
+                    </div>
             </form>
-            <a href="story.html"><button class="buttonInput" id="createStory">Give me a Story</button></a>
         </section>
         <script src="js/inputs.js"></script>
         <script src="js/story.js"></script>

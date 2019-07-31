@@ -73,10 +73,6 @@ form {
     width:100%;
 }
 
-#textBoxes {
-
-}
-
 #formFieldset {
     width:60%;
     border:solid black 1px;
@@ -114,4 +110,35 @@ button {
 a {
     text-decoration:none;
     color:black;
+}
+
+h3 {
+    font-size:1.6rem;
+}
+
+img {
+    width:300px;
+    height:auto;
+}
+
+#abouts {
+    margin-top:200px;
+}
+
+#aboutJon, #aboutTerra, #aboutJames, #aboutAkira {
+    display:block;
+    box-sizing:border-box;
+    width:100%;
+}
+
+#infoJon, #paraJon, #infoJames, #paraJames {
+    float:left;
+}
+
+#infoTerra, #paraTerra, #infoAkira, #paraAkira {
+    float:right;
+}
+
+h2 {
+    font-size:2rem;
 }
