@@ -19,14 +19,14 @@ var Paragraph = function(person,place,adjective,thing) {
       };
 };
 
-//=============================================================================
+//======================================================================================================
 
 function giveRandom(array) {
   var random = array(randomSelector(array));
   return random;
 };
 
-//=============================================================================
+//======================================================================================================
 
 //CREATE PARAGRAPH FUNCTION=============================================================================
 function createParagraph() {
@@ -36,32 +36,40 @@ function createParagraph() {
   var adjectives = JSON.parse(localStorage.getItem('adjective'));
   var things = JSON.parse(localStorage.getItem('thing'));
   var newStory = new Paragraph(people, places, adjectives, things);
-}
+} console.log('newStory created line 39');
 
 //CREATE PUBLISH STORY FUNCTION=========================================================================
 
 function publishStory() {
   var paragraph = createParagraph();
-  var story = document.getElementById('story');
+  var story = document.getElementById('storyBlock');
   var p = document.createElementById('p');
   p.textContent = paragraph;
   story.appendChild(p);
 
-  var story = document.getElementById('createStory');
   story.addEventListener('button', handleSubmitStory);
-}
+}console.log('publish story function - line 51');
+console.log(p.textContent);
+console.log(story);
 
-//set up the reset button listener 
+
+//set up resetButton==================================================================================
 //TODO add event listener for reset button
 function resetButton() {
 var resetButton = document.getElementById('reset');
 resetButton.addEventListener('click', resetStory);
 }
 
-//TODO add the reset button to clear story and return to index page
+
 function resetStory(event) {
   event.preventDefault();
   localStorage.clear();
-  //TODO need to clear the arrays and objects
-}
 
+  //TODO add the reset button to clear story and return to index page
+  
+
+  //TODO need to clear the arrays and objects
+
+}
+//call function to publish story ======================================================================
+publishStory();
