@@ -73,10 +73,6 @@ form {
     width:100%;
 }
 
-#textBoxes {
-
-}
-
 #formFieldset {
     width:60%;
     border:solid black 1px;
@@ -114,4 +110,13 @@ button {
 a {
     text-decoration:none;
     color:black;
+}
+
+h3 {
+    font-size:1.6rem;
+}
+
+img {
+    width:300px;
+    height:auto;
 }
