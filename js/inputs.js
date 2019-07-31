@@ -49,7 +49,6 @@ function handleSubmitInput(event) {  //need to change this name to handleSubmit
   places.push(place);
   things.push(thing);
   adjectives.push(adjective);
-  //
   
   //TODO: Call the functions updateArray(), saveToLocalStorage(), clearForm()
   updateArray();
@@ -81,10 +80,6 @@ function saveToLocalStorage() {
   localStorage.setItem("adjective", JSON.stringify(adjectives));
   console.log(`Line 74: The local storage now holds within the adjectives array: ${JSON.parse(localStorage.getItem('adjective'))}`);
 }
-
-//TODO: remember to stringify the arrays
-
-//==============================================================================
 
 //==============================================================================
 
