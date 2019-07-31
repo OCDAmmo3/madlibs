@@ -62,5 +62,6 @@ resetButton.addEventListener('click', resetStory);
 function resetStory(event) {
   event.preventDefault();
   localStorage.clear();
+  //TODO need to clear the arrays and objects
 }
 
