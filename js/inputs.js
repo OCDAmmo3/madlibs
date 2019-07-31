@@ -104,7 +104,7 @@ function saveToLocalStorage() {
 //==============================================================================
 
 //handleSubmitStory Function====================================================
-function handleSubmitStory(event) {
+function handleSubmit(event) {
   //TODO:Prevent default action
   event.preventDefault();
   console.log('Line 105: Default event prevented');
@@ -113,7 +113,7 @@ function handleSubmitStory(event) {
   console.log('line 108: createParagraph called');
   publishStory();
   console.log('line 110: publishStory called');
-}
+
 
   event.preventDefault();
   console.log('Line 105: Default event prevented');
@@ -122,7 +122,7 @@ function handleSubmitStory(event) {
   console.log('line 108: createParagraph called');
   publishStory();
   console.log('line 110: publishStory called');
-};
+}
 
 //==============================================================================
 
