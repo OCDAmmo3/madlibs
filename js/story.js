@@ -38,9 +38,9 @@ function createParagraph() {
   var newStory = new Paragraph(people, places, adjectives, things);
 } console.log('newStory created line 39');
 //IMPORTING HANDLE SUBMIT STORY FUNCTION FROM INPUT JS =================================================
-var importStory = require('./input.js');
-var importedFunction = importStory.handleSubmitStory();  
-console.log('line 43: importedFunction called handle submit story');
+// var importStory = require('./input.js');
+// var importedFunction = importStory.handleSubmitStory();  
+// console.log('line 43: importedFunction called handle submit story');
 
 //CREATE PUBLISH STORY FUNCTION=========================================================================
 

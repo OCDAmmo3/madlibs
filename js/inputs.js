@@ -113,9 +113,9 @@ function handleSubmitStory(event) {
   console.log('line 108: createParagraph called');
   publishStory();
   console.log('line 110: publishStory called');
-}
 
-exports.handleSumbitStory = function (event) {
+
+// exports.handleSumbitStory = function (event) {
   event.preventDefault();
   console.log('Line 105: Default event prevented');
   //TODO:Call the functions createParagraph() and publishStory()
