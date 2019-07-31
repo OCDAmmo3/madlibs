@@ -125,17 +125,19 @@ img {
     margin-top:200px;
 }
 
-#aboutJon, #aboutTerra, #aboutJames, #aboutAkira {
-    display:block;
-    box-sizing:border-box;
-    width:100%;
+#infoJon, #infoJames {
+    margin-left:20px;
 }
 
-#infoJon, #paraJon, #infoJames, #paraJames {
+#infoTerra #infoAkira {
+    margin-right:20px;
+}
+
+.leftAbout {
     float:left;
 }
 
-#infoTerra, #paraTerra, #infoAkira, #paraAkira {
+.rightAbout {
     float:right;
 }
 
