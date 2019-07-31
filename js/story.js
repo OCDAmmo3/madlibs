@@ -25,13 +25,13 @@ var Paragraph = function (person, adjective, place, thing) {
 //CREATE PARAGRAPH FUNCTION=============================================================================
 function createParagraph() {
   //TODO: Create necessary variables to contain the local storage arrays
-  var people = JSON.Parse(localStorage.getItem('person'));
+  var people = JSON.parse(localStorage.getItem('person'));
   console.log(`Line 29: people contains ${people}`);
-  var places = JSON.Parse(localStorage.getItem('place'));
+  var places = JSON.parse(localStorage.getItem('place'));
   console.log(`Line 31: places contains ${places}`);
-  var adjectives = JSON.Parse(localStorage.getItem('adjective'));
+  var adjectives = JSON.parse(localStorage.getItem('adjective'));
   console.log(`Line 33: adjectives contains ${adjectives}`);
-  var things = JSON.Parse(localStorage.getItem('thing'));
+  var things = JSON.parse(localStorage.getItem('thing'));
   console.log(`Line 35: things contains ${things}`);
   var newStory = new Paragraph(person, adjective, place, thing);
   console.log(`Line 37: newStory contains person:${newStory.person}`);
@@ -46,7 +46,7 @@ function createParagraph() {
   console.log('Line 46: Random selectors created');
 
   // console.log(`Running random selector now it chose : ${temp}`);
-  var story = document.getElementById('createStory');
+  var story = document.getElementById('storyBlock');
   console.log(`Line 49: story targeting id`);
   //TODO:Concatenate the randomly selected elements into the story array
   var paragraph = [];
@@ -83,7 +83,7 @@ function createParagraph() {
 
   // TODO: Attach event listener to the submit button on the form and call the handling function
   story.addEventListener('submit', handleSubmit);
-  console.log(`Line 51: listening for submit`);
+  console.log(`Line 86: listening for submit`);
 
   return paragraph;
 }
