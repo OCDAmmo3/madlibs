@@ -64,8 +64,12 @@ resetButton.addEventListener('click', resetStory);
 function resetStory(event) {
   event.preventDefault();
   localStorage.clear();
+
   //TODO add the reset button to clear story and return to index page
   
+
+  //TODO need to clear the arrays and objects
+
 }
 //call function to publish story ======================================================================
 publishStory();
