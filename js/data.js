@@ -1,3 +1,4 @@
+'use strict';
 //TODO:  Initialize all global components
 //INITALIZE GLOBAL VARIABLES====================================================
 
