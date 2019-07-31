@@ -77,4 +77,8 @@ function createParagraph() {
     story.textContent = paragraph;
   }
   
+  function reset() {
+      localStorage.clear()
+      
+  }
   publishStory();
