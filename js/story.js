@@ -47,14 +47,18 @@ function createParagraph() {
 function publishStory() {
   var paragraph = createParagraph();
   var story = document.getElementById('storyBlock');
+
   var p = document.createElement('p');
   p.textContent = paragraph;
   story.appendChild(p);
-
-  story.addEventListener('button', handleSubmitStory);
-  console.log('publish story function - line 51');
-  console.log(p.textContent);
+  console.log('line 54: append paragragh to location on story.html');
   console.log(story);
+  var createStoryButton = document.getElementById("createStory");
+  console.log('line 57: createStoryButton')
+  createStoryButton.addEventListener("submit", handleSubmitInput); //need to update name of function
+  console.log('line 59: event listener for create story button')
+  console.log('line 60: publish story function');
+  console.log(p.textContent);
 
 }
 

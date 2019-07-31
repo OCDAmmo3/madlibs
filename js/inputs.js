@@ -28,15 +28,12 @@ function updateArray() {
   console.log(`Line 28: submit button is selected`);
   //TODO: Push the inputs into the respective arrays
 
-  var story = document.getElementById("temporary");
-  story.addEventListener("submit", handleSubmitInput);
-  //TODO: Add event listener for the click
 }
 
 //==============================================================================
 
 //handleSubmitInput Function====================================================
-function handleSubmitInput(event) {
+function handleSubmitInput(event) {  //need to change this name to handleSubmit
   //TODO: Prevent default action
   event.preventDefault();
   console.log('Line 51: Default action prevented');
@@ -52,16 +49,22 @@ function handleSubmitInput(event) {
   places.push(place);
   things.push(thing);
   adjectives.push(adjective);
-
-  this.reset();
+  //
+  
   //TODO: Call the functions updateArray(), saveToLocalStorage(), clearForm()
   updateArray();
-
-  console.log('Line 55: updateArray called');
+  console.log('Line 59: updateArray called');
   saveToLocalStorage();
-  console.log('Line 57: saveToLocalStorage called');
-  // clearForm();
-  // console.log('Line 59: clearForm called');
+  console.log('Line 61: saveToLocalStorage called');
+
+  //TODO:Call the functions createParagraph() and publishStory()
+  createParagraph();
+  console.log('line 65: createParagraph called');
+  publishStory();
+  console.log('line 67: publishStory called');
+  this.reset();
+  console.log('line 69: reset the form');
+
 }
 
 //==============================================================================
@@ -83,63 +86,7 @@ function saveToLocalStorage() {
 
 //==============================================================================
 
-//clearForm Function============================================================
-// function clearForm() {
-//   //TODO: Create a variable to hold the querySelectorAll information
-//   var clear = document.querySelectorAll('input');
-//   console.log('Line 85: The inputs have been selected');
-//   //TODO:Create a loop that removes the content
-//   for (var i in clear) {
-//     clear.textContent = '';
-//     console.log(`Line 89: this input has been cleared here's proof : ${clear[i]}`);
-//   }
-  // =======OR========
-  // for (var i in input) {
-  //   clear.remove();
-  // }
-  //
-  //TODO: Remember to replace with an empty string
-// }
-
-//==============================================================================
-
-//handleSubmitStory Function====================================================
-function handleSubmitStory(event) {
-  //TODO:Prevent default action
-  event.preventDefault();
-  console.log('Line 105: Default event prevented');
-  //TODO:Call the functions createParagraph() and publishStory()
-  createParagraph();
-  console.log('line 108: createParagraph called');
-  publishStory();
-  console.log('line 110: publishStory called');
-
-
-// exports.handleSumbitStory = function (event) {
-  event.preventDefault();
-  console.log('Line 105: Default event prevented');
-  //TODO:Call the functions createParagraph() and publishStory()
-  createParagraph();
-  console.log('line 108: createParagraph called');
-  publishStory();
-  console.log('line 110: publishStory called');
-}
-
-//==============================================================================
-
 //==============================================================================
 
 //EXECUTABLES===================================================================
 updateArray();
-
-//==============================================================================
-
-//==============================================================================
-
-//==============================================================================
-
-//==============================================================================
-
-//==============================================================================
-
-//==============================================================================
