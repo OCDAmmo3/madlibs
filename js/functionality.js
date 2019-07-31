@@ -207,18 +207,14 @@ function publishStory() {
   //TODO: append to the story
   var paragraph = createStory();
   var story = document.getElementById('storyBlock');
-  var p = document.createElement('p');
 
+  console.log(story);
   console.log(`Line 212: p tag created`);
 
-  p.textContent = paragraph;
+  story.textContent = paragraph;
 
-  console.log(`Line 216: p contains ${p.textContent}`);
-
-  story.appendChild(p);
-
+  console.log(`Line 216: p contains ${story.textContent}`);
   console.log('line 220: append paragragh to location on story.html');
-  console.log(story);
 
   var createStoryButton = document.getElementById("createStory");
 
@@ -228,7 +224,7 @@ function publishStory() {
 
   console.log('line 229: event listener for create story button');
   console.log('line 230: publish story function');
-  console.log(p.textContent);
+  console.log(story.textContent);
 
 }
 
