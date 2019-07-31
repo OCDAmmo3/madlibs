@@ -226,7 +226,7 @@ function publishStory() {
 
   // createStoryButton.addEventListener("submit", handleSubmitInput); //need to update name of function
 
-  console.log('line 229: event listener for create story button')
+  console.log('line 229: event listener for create story button');
   console.log('line 230: publish story function');
   console.log(p.textContent);
 
