@@ -19,14 +19,14 @@ var Paragraph = function(person,place,adjective,thing) {
       };
 };
 
-//=============================================================================
+//======================================================================================================
 
 function giveRandom(array) {
   var random = array(randomSelector(array));
   return random;
 };
 
-//=============================================================================
+//======================================================================================================
 
 //CREATE PARAGRAPH FUNCTION=============================================================================
 function createParagraph() {
@@ -51,16 +51,20 @@ function publishStory() {
   story.addEventListener('button', handleSubmitStory);
 }
 
-//set up the reset button listener 
+
+//set up resetButton==================================================================================
 //TODO add event listener for reset button
 function resetButton() {
 var resetButton = document.getElementById('reset');
 resetButton.addEventListener('click', resetStory);
 }
 
-//TODO add the reset button to clear story and return to index page
+
 function resetStory(event) {
   event.preventDefault();
   localStorage.clear();
+  //TODO add the reset button to clear story and return to index page
+  
 }
-
+//call function to publish story ======================================================================
+publishStory();
