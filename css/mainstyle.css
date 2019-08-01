@@ -167,3 +167,10 @@ h2 {
     margin: auto;
     padding: 50px;
 }
+
+#storyBlock {
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    transform: translateY(-50%);
+}
