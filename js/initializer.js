@@ -38,13 +38,9 @@ function updateArray() {
   
   function saveToLocalStorage() {
     localStorage.setItem("person", JSON.stringify(people));
-    // console.log(`Line 189: The local storage now holds within the people array: ${JSON.parse(localStorage.getItem('person'))}`);
     localStorage.setItem("place", JSON.stringify(places));
-    // console.log(`Line 191: The local storage now holds within the places array: ${JSON.parse(localStorage.getItem('place'))}`);
     localStorage.setItem("thing", JSON.stringify(things));
-    // console.log(`Line 193: The local storage now holds within the things array: ${JSON.parse(localStorage.getItem('thing'))}`);
     localStorage.setItem("adjective", JSON.stringify(adjectives));
-    // console.log(`Line 195: The local storage now holds within the adjectives array: ${JSON.parse(localStorage.getItem('adjective'))}`);
   }
 
   function handleSubmitInput(event) {
