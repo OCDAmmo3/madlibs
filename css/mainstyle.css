@@ -8,7 +8,7 @@ body {
     font-size: 20px;
     background-color:#FF4317;
     color: black;
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
 
 }
 
@@ -173,9 +173,12 @@ h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: auto;
+    margin-top: 50px;
     transform: translate(-50%, -50%);
-    font-family: 'Permanent Marker';
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.6rem;
+    border: inset 15px;
+    padding: 30px;
 }
 
 /* ==============Animation============= */
