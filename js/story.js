@@ -76,9 +76,5 @@ function createParagraph() {
     var story = document.getElementById('storyBlock');
     story.textContent = paragraph;
   }
-  
-  function reset() {
-      localStorage.clear()
-      
-  }
+
   publishStory();
