@@ -1,14 +1,14 @@
 'use strict';
 
 var Paragraph = function(person, adjective, place, thing) {
-    this.person = person;
-    this.adjective = adjective;
-    this.place = place;
-    this.thing = thing;
-    this.randomSelector = function() {
-      var random = Math.floor(Math.random() * 3);
-      return random;
-    };
+  this.person = person;
+  this.adjective = adjective;
+  this.place = place;
+  this.thing = thing;
+  this.randomSelector = function() {
+    var random = Math.floor(Math.random() * 3);
+    return random;
+  };
 };
 
 
@@ -18,6 +18,7 @@ var story2 = ['My brother ',' went on vacation to ','. During his trip he made a
 stories.push(story1);
 stories.push(story2);
 console.log(stories);
+
 
 
 
@@ -74,11 +75,12 @@ function createParagraph() {
   
   var newStory = new Paragraph(people, adjectives, places, things);
   
+
   var randomPerson = newStory.randomSelector(newStory.person);
   var randomPlace = newStory.randomSelector(newStory.place);
   var randomAdjective = newStory.randomSelector(newStory.adjective);
   var randomThing = newStory.randomSelector(newStory.thing);
-  
+
   var story = document.getElementById('storyBlock');
   
   var paragraph = [];
@@ -107,6 +109,7 @@ function createParagraph() {
   paragraph.push(storyArray[11]);
   paragraph.push(newStory.place[randomPlace]);
   paragraph.push(storyArray[12]);
+
   console.log(paragraph);
 
   return paragraph;
@@ -117,6 +120,7 @@ function createStory() {
   var output = '';
   for (var i = 0; i < story.length; i++) {
     output = `${output}${story[i]}`;
+
   }
 
   return output;
