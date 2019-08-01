@@ -11,12 +11,14 @@ var Paragraph = function(person, adjective, place, thing) {
     };
 };
 
+
 var stories = [];
 var story1 = ['My friend ', ' decided to go to ', '. On the way there she discovered a ', ' genie from a ', '. The genie told her he would grant her three wishes. I wish for my ', ' friend ', ' to have a ', '. My second wish is for ', ' to get a ', ' made in ', '. My last wish is to be teleported to the top of the ', '.'];
 var story2 = ['My brother ',' went on vacation to ','. During his trip he made a couple of ',' friends with ','. The first ',' friend was ',' who loved to juggle ','. He also met ',', a teacher that missed a connecting flight due to her valuable collection of ',' and loved to talk about ','. Lastly, he met ',' ho was in a mad rush to get back to ','.']
 stories.push(story1);
 stories.push(story2);
 console.log(stories);
+
 
 
 function randomStory() {
@@ -70,24 +72,61 @@ function createParagraph() {
     paragraph.push(storyArray[11]);
     console.log(paragraph);
   
-    return paragraph;
-  }
-
-  function createStory() {
-    var story = createParagraph();
-    var output = '';
-    for (var i = 0; i < story.length; i++) {
-      output = `${output} ${story[i]}`;
-    }
+  var newStory = new Paragraph(people, adjectives, places, things);
   
-    return output;
+  var randomPerson = newStory.randomSelector(newStory.person);
+  var randomPlace = newStory.randomSelector(newStory.place);
+  var randomAdjective = newStory.randomSelector(newStory.adjective);
+  var randomThing = newStory.randomSelector(newStory.thing);
   
+  var story = document.getElementById('storyBlock');
+  
+  var paragraph = [];
+  paragraph.push(storyArray[0]);
+  paragraph.push(newStory.person[randomPerson]);
+  paragraph.push(storyArray[1]);
+  paragraph.push(newStory.place[randomPlace]);
+  paragraph.push(storyArray[2]);
+  paragraph.push(newStory.adjective[randomAdjective]);
+  paragraph.push(storyArray[3]);
+  paragraph.push(newStory.thing[randomThing]);
+  paragraph.push(storyArray[4]);
+  paragraph.push(newStory.adjective[randomAdjective]);
+  paragraph.push(storyArray[5]);
+  paragraph.push(newStory.person[randomPerson]);
+  paragraph.push(storyArray[6]);
+  paragraph.push(newStory.adjective[randomAdjective]);
+  paragraph.push(storyArray[7]);
+  paragraph.push(newStory.thing[randomThing]);
+  paragraph.push(storyArray[8]);
+  paragraph.push(newStory.person[randomPerson]);
+  paragraph.push(storyArray[9]);
+  paragraph.push(newStory.thing[randomThing]);
+  paragraph.push(storyArray[10]);
+  paragraph.push(newStory.place[randomPlace]);
+  paragraph.push(storyArray[11]);
+  paragraph.push(newStory.place[randomPlace]);
+  paragraph.push(storyArray[12]);
+  console.log(paragraph);
+
+  return paragraph;
+}
+
+function createStory() {
+  var story = createParagraph();
+  var output = '';
+  for (var i = 0; i < story.length; i++) {
+    output = `${output}${story[i]}`;
   }
 
-  function publishStory() {
-    var paragraph = createStory();
-    var story = document.getElementById('storyBlock');
-    story.textContent = paragraph;
-  }
+  return output;
 
-  publishStory();
+}
+
+function publishStory() {
+  var paragraph = createStory();
+  var story = document.getElementById('storyBlock');
+  story.textContent = paragraph;
+}
+
+publishStory();
