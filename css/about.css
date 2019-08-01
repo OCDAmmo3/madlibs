@@ -150,7 +150,7 @@ a {
 }
 
 h3 {
-    font-size:1.6rem;
+    font-size:40px;
     color: rgb(48, 46, 69);
     font-family: cursive;
     font-style: bolder;
@@ -202,21 +202,21 @@ section{
 
 p#jon{
     margin-left:350px;
-    margin-top: -190px;
+    margin-top: -225px;
     margin-right:350px;
 }
 p#terra{
-    margin-top:-190px;
+    margin-top:-210px;
     margin-right:300px;
     margin-left:350px;
 }
 p#james{
     margin-left:350px;
-    margin-top: -205px;
+    margin-top: -230px;
     margin-right:350px;
 }
 p#akira{
-    margin-top:-210px;
+    margin-top:-230px;
     margin-right:300px; 
     margin-left:350px;
     text-align: left;
