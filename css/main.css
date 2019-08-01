@@ -1,0 +1,37 @@
+body {
+    font-size:20px;
+    background-color:#FF4317;
+    color: black;
+
+}
+
+.navbar {
+    width: 100%;
+    background-color: #A8D7EB;
+    height: 100px;
+    color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.brand-link {
+    color: #FF4317;
+    text-decoration: none;
+    font-size: 4rem;
+    padding: 10px;
+}
+
+.nav-links {
+    color: #FF4317;
+    position: fixed;
+    top: 5%;
+    right: 35%;
+}
+
+a {
+    text-decoration: none;
+    color: #FF4317;
+    margin-left: 10px;
+    font-size: 2rem;
+}
