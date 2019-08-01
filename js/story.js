@@ -14,17 +14,13 @@ var Paragraph = function(person, adjective, place, thing) {
 
 var stories = [];
 
-var story1 = ['My friend ', ' decided to go to ', '. On the way there she discovered a ', ' genie from a ', '. The genie told her he would grant her three wishes. I wish for my ', ' friend ', ' to have a ', ' ', '. My second wish is for ', ' to get a ', ' made in ', '. My last wish is to be teleported to the top of the ', '.'];
-
-var story2 = ['My brother ',' went on vacation to ','. During his trip he made a couple of ',' friends with ','. The first ',' friend was ',' who loved to juggle ', ' ', '. He also met ',', a teacher that missed a connecting flight due to her valuable collection of ',' and loved to talk about ','. Lastly, he met ',' ho was in a mad rush to get back to ','.'];
+var story1 = ['My friend ', ' decided to go to ', '. On the way there she discovered a ', ' genie from a ', '. The genie told her he would grant her three wishes. I wish for my ', ' friend ', ' to have a ', '. My second wish is for ', ' to get a ', ' made in ', '. My last wish is to be teleported to the top of the ', '.'];
+var story2 = ['My brother ',' went on vacation to ','. During his trip he made a couple of ',' friends with ','. The first ',' friend was ',' who loved to juggle ','. He also met ',', a teacher that missed a connecting flight due to her valuable collection of ',' and loved to talk about ','. Lastly, he met ',' ho was in a mad rush to get back to ','.'];
 
 stories.push(story1);
 stories.push(story2);
 
 console.log(stories);
-
-
-
 
 function randomStory() {
   var random = Math.floor(Math.random() * stories.length);
@@ -37,17 +33,16 @@ function createParagraph() {
   var places = JSON.parse(localStorage.getItem('place'));
   var adjectives = JSON.parse(localStorage.getItem('adjective'));
   var things = JSON.parse(localStorage.getItem('thing'));
-  
+
   var newStory = new Paragraph(people, adjectives, places, things);
-  
 
   var randomPerson = newStory.randomSelector(newStory.person);
   var randomPlace = newStory.randomSelector(newStory.place);
   var randomAdjective = newStory.randomSelector(newStory.adjective);
   var randomThing = newStory.randomSelector(newStory.thing);
-  
+
   var storyArray = randomStory();
-  
+
   var paragraph = [];
 
   paragraph.push(storyArray[0]);

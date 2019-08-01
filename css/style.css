@@ -112,6 +112,11 @@ a {
     color:#343642;
 }
 
+#storyBlock {
+    position:absolute;
+    top:200px;
+}
+
 h3 {
     font-size:1.6rem;
 }
