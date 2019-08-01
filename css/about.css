@@ -7,8 +7,10 @@ font-family: 'Nunito', sans-serif;
 
 body{
     font-size:20px;
-    background-color:gray;
+
+    background-color:rgb(167, 166, 166);
     
+
 }
 
 header {
@@ -159,7 +161,82 @@ img {
     height:auto;
     padding:11.25px;
     margin-left:-12px;
+    
 }
+
+#abouts {
+    margin-top:200px;
+}
+
+#infoJon, #infoJames {
+    margin-left:20px;
+    
+}
+
+#infoTerra #infoAkira {
+    margin-right:20px;
+
+}
+
+.leftAbout {
+    float:left;
+}
+
+.rightAbout {
+    float:right;
+}
+
+h2 {
+    font-size:2rem;
+}
+p {
+    color: #343642;
+    font-size: 22.5px;
+    padding: 11.25px;
+
+}
+
+section{
+    position: relative;
+}
+
+p#jon{
+    margin-left:350px;
+    margin-top: -190px;
+    margin-right:350px;
+}
+p#terra{
+    margin-top:-190px;
+    margin-right:300px;
+    margin-left:350px;
+}
+p#james{
+    margin-left:350px;
+    margin-top: -205px;
+    margin-right:350px;
+}
+p#akira{
+    margin-top:-210px;
+    margin-right:300px; 
+    margin-left:350px;
+    text-align: left;
+}
+h3#a{
+    margin-left:0px;
+}
+
+    
+}
+
+h3 {
+    font-size:1.6rem;
+}
+
+img {
+    width:300px;
+    height:auto;
+}
+
 
 #abouts {
     margin-top:200px;
@@ -184,10 +261,4 @@ img {
 h2 {
     font-size:2rem;
 }
-p {
-    color: #343642;
-    font-size: 22.5px;
-    padding: 11.25px;
-    
-    
-}
+
