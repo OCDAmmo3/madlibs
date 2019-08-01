@@ -179,23 +179,23 @@ h2 {
 
 /* ==============Animation============= */
 
-.form-pulse{
+.form-pulse {
     animation: pulse 5s infinite;
     animation-name: form-pulse;
 }
 
-@keyframes input-pulse {
+@keyframes form-pulse {
   0% {
     background-color: white;
     color: black;
   }
   50% {
     background-color: black;
-    color: white;
+    color: black;
   }
   100% {
-     background-color: white;
-     color: black;
+    background-color: black;
+    color: white;
   }
 }
 
