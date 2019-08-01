@@ -1,15 +1,15 @@
 
 /*
-font-family: 'Pacifico', cursive;
+h3 font-family: 'Pacifico', cursive;
 font-family: 'Permanent Marker', cursive;
-font-family: 'Nunito', sans-serif;
+body font-family: 'Nunito', sans-serif;
 */
 
 body{
     font-size:20px;
 
     background-color:rgb(167, 166, 166);
-    
+    font-family: 'Nunito', sans-serif;
 
 }
 
@@ -34,14 +34,14 @@ header {
     z-index: 1;
 }
 .brand-link {
-    color: #273382;
+    color: #FF4317;
     text-decoration: none;
-    font-size: 4rem;
+    font-size:5.5rem ;
     padding: 10px;
 }
 
 .nav-links {
-    color: #273382;
+    color: #FF4317;
     position: fixed;
     top: 5%;
     right: 35%;
@@ -144,15 +144,15 @@ button {
 
 a {
     text-decoration:none;
-    color:#273382;
+    color:#FF4317;
     font-size: 40px;
     padding:5px;
 }
 
 h3 {
-    font-size:1.6rem;
+    font-size:40px;
     color: rgb(48, 46, 69);
-    font-family: cursive;
+    font-family: 'Pacifico', cursive;
     font-style: bolder;
 }
 
@@ -204,21 +204,22 @@ section{
 
 p.jon{
     margin-left:350px;
-    margin-top: -190px;
+    margin-top: -225px;
     margin-right:350px;
 }
-p.terra{
-    margin-top:-190px;
+p#terra{
+    margin-top:-210px;
     margin-right:300px;
     margin-left:350px;
 }
 p.james{
     margin-left:350px;
-    margin-top: -205px;
+    margin-top: -230px;
     margin-right:350px;
 }
-p.akira{
-    margin-top:-210px;
+p#akira{
+    margin-top:-230px;
+
     margin-right:300px; 
     margin-left:350px;
     text-align: left;
