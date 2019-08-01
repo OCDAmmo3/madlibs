@@ -171,6 +171,51 @@ h2 {
 #storyBlock {
     position: absolute;
     top: 50%;
+    left: 25%;
+    right: 25%;
     margin: auto;
-    transform: translateY(-50%);
+    /* transform: translate(-50%, -50%); */
+    color:white;
+}
+
+/* ==============Animation============= */
+
+.form-pulse {
+    animation: pulse 5s infinite;
+    animation-name: form-pulse;
+}
+
+@keyframes form-pulse {
+  0% {
+    background-color: white;
+    color: black;
+  }
+  50% {
+    background-color: black;
+    color: black;
+  }
+  100% {
+    background-color: black;
+    color: white;
+  }
+}
+
+.pulse {
+  animation: pulse 5s infinite;
+  animation-name: button-pulse;
+}
+
+@keyframes button-pulse {
+  0% {
+    background-color: black;
+    color: #A8D7EB;
+  }
+  50% {
+    background-color: #A8D7EB;
+    color: black;
+  }
+  100% {
+    background-color: black;
+    color: #A8D7EB;
+  }
 }
