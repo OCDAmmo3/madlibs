@@ -180,12 +180,14 @@ h2 {
     border: inset 15px;
     color:white;
     padding: 30px;
+    color: white;
+    background-color: black;
 }
 
 /* ==============Animation============= */
 
 .form-pulse {
-    animation: pulse 5s infinite;
+    animation: pulse 10s infinite;
     animation-name: form-pulse;
 }
 
@@ -196,16 +198,16 @@ h2 {
   }
   50% {
     background-color: black;
-    color: black;
+    color: white;
   }
   100% {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
 }
 
 .pulse {
-  animation: pulse 5s infinite;
+  animation: pulse 10s infinite;
   animation-name: button-pulse;
 }
 
