@@ -184,7 +184,7 @@ h2 {
     animation-name: form-pulse;
 }
 
-@keyframes form-pulse {
+@keyframes input-pulse {
   0% {
     background-color: white;
     color: black;
