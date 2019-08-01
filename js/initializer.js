@@ -53,7 +53,7 @@ function handleSubmitInput(event) {
   event.preventDefault();
   updateArray();
   saveToLocalStorage();
-  document.location = "../story.html";
+  document.location = "story.html";
 }
 
 var createStoryButton = document.getElementById("temporary");
