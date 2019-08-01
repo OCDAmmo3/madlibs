@@ -17,7 +17,7 @@ function updateArray() {
     places.push(placeInputs);
     things.push(thingInputs);
     adjectives.push(adjectiveInputs);
-  }
+  } 
 }
   
 function saveToLocalStorage() {
