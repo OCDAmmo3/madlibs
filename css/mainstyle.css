@@ -1,7 +1,7 @@
 body {
     font-size:20px;
-    background-color:#273382;
-    color: ##343642;
+    background-color:#FF4317;
+    color: #black;
 }
 
 header {
@@ -13,20 +13,21 @@ header {
     width: 100%;
     background-color: #A8D7EB;
     height: 100px;
-    color: #343642;
+    color: black;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .brand-link {
-    color: #273382;
+    color: #FF4317;
     text-decoration: none;
     font-size: 4rem;
     padding: 10px;
 }
 
 .nav-links {
-    color: #273382;
+    color: #FF4317;
     position: fixed;
     top: 5%;
     right: 35%;
@@ -40,12 +41,12 @@ header {
 ol {
     padding:20px;
     margin-top:150px;
-    background-color:#343642;
+    background-color:black;
     font-size:1.1rem;
     display:block;
     list-style:decimal inside;
-    border:solid #343642 1px;
-    color: #F9F9FA;
+    border:solid black 1px;
+    color: white;
 }
 
 ol li {
@@ -55,11 +56,11 @@ ol li {
 form {
     margin: 20px 0 50px 0;
     padding: 10px;
-    border: solid #343642 1px;
+    border: solid black 1px;
     width: 60%;
     display: flex;
     justify-content: center;
-    background-color: #F9F9FA;
+    background-color: white;
     position: relative;
 }
 
@@ -71,10 +72,10 @@ form {
 
 #formFieldset {
     width:60%;
-    border:solid #343642 1px;
+    border:solid black 1px;
     padding:10px;
-    background-color:#F9F9FA;
-    color: #343642;
+    background-color:white;
+    color: black;
 }
 
 input {
@@ -106,13 +107,13 @@ button {
     padding: 5px;
     width: 860px;
     color: #A8D7EB;
-    background: #343642;
+    background: black;
     border: solid 1px #A8D7EB;
 }
 
 a {
     text-decoration: none;
-    color: #273382;
+    color: #FF4317;
     margin-left: 10px;
     font-size: 2rem;
 }
@@ -148,4 +149,14 @@ img {
 
 h2 {
     font-size:2rem;
+}
+
+.story-section {
+    height: 100vh;
+    position: relative;
+}
+
+.story-shell {
+    margin: auto;
+    padding: 50px;
 }
