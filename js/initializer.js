@@ -6,8 +6,6 @@ var things = [];
 var adjectives = [];
 
 function updateArray() {
-
-
   for(var i = 0; i < 3; i++){
 
     var personInputs = document.getElementById('person-input1', 'person-input2', 'person-input3').value;
