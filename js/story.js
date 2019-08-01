@@ -11,7 +11,7 @@ var Paragraph = function(person, adjective, place, thing) {
     };
 };
 
-var storyArray = ['My friend ', ' decided to go to the ', '. On the way there she discovered a ', ' genie from a ', '. The genie told her he would grant her three wishes. I wish for my ', ' friend ', ' to have a ', '. My second wish is for ', ' to get a ', ' made in ', '. My last wish is to be teleported to the top of the ', '.'];
+var storyArray = ['My friend ', ' decided to go to ', '. On the way there she discovered a ', ' genie from a ', '. The genie told her he would grant her three wishes. I wish for my ', ' friend ', ' to have a ', ' ', '. My second wish is for ', ' to get a ', ' made in ', '. My last wish is to be teleported to the top of the ', '.'];
 
 function createParagraph() {
 
@@ -53,6 +53,8 @@ function createParagraph() {
   paragraph.push(storyArray[10]);
   paragraph.push(newStory.place[randomPlace]);
   paragraph.push(storyArray[11]);
+  paragraph.push(newStory.place[randomPlace]);
+  paragraph.push(storyArray[12]);
   console.log(paragraph);
 
   return paragraph;
@@ -62,7 +64,7 @@ function createStory() {
   var story = createParagraph();
   var output = '';
   for (var i = 0; i < story.length; i++) {
-    output = `${output} ${story[i]}`;
+    output = `${output}${story[i]}`;
   }
 
   return output;
