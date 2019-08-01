@@ -1,0 +1,165 @@
+html {
+    font-size:20px;
+    background-color:gray;
+    
+}
+
+header {
+    display:flex;
+    justify-content:center;
+}
+ /* body {
+    background-image: url('../images/storyPage1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  */
+
+}
+#navBar {
+    background-color:skyblue;
+}
+
+nav h1 {
+    font-size:5rem;
+    background-color:#273382;
+    position:absolute;
+    top:25px;
+    left:2%;
+    border:solid black 1px;
+    padding:10px;
+}
+
+nav ul {
+    position:absolute;
+    top:0px;
+    right:0px;
+    border-bottom:solid black 1px;
+    border-left:solid black 1px;
+    background-color:#273382;
+}
+
+nav li {
+    display:block;
+    text-align:center;
+    font-size:1.4rem;
+    padding:5px 10px 5px 10px;
+}
+
+#instructions {
+    display:flex;
+    justify-content:center;
+}
+
+ol {
+    padding:20px;
+    margin-top:150px;
+    background-color:lightGrey;
+    font-size:1.1rem;
+    display:block;
+    list-style:decimal inside;
+    border:solid black 1px;
+}
+
+ol li {
+    padding:5px 0px 5px 0px;
+}
+
+form {
+    margin-top:20px;
+    padding:10px;
+    border:solid black 1px;
+    width:60%;
+    display:flex;
+    justify-content:center;
+    background-color:lightGrey;
+}
+
+#form {
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+
+#formFieldset {
+    width:60%;
+    border:solid black 1px;
+    padding:10px;
+    background-color:white;
+}
+
+input {
+    box-sizing:border-box;
+    font-size:1.2rem;
+    display:block;
+    margin:20px 10% 0px 10%;
+    width:80%;
+    padding:5px;
+}
+
+input:first-of-type {
+    margin-top:40px;
+}
+
+input:last-of-type {
+    margin-bottom:40px;
+}
+
+#buttons {
+    display:flex;
+    justify-content:center;
+}
+
+button {
+    font-size:1.2rem;
+    padding:5px;
+}
+
+a {
+    text-decoration:none;
+    color:#a8d7eb;
+}
+
+h3 {
+    font-size:1.6rem;
+    color: rgb(48, 46, 69);
+    font-family: cursive;
+    font-style: bolder;
+}
+
+img {
+    width:300px;
+    height:auto;
+    padding:11.25px;
+    margin-left:-12px;
+}
+
+#abouts {
+    margin-top:200px;
+}
+
+#infoJon, #infoJames {
+    margin-left:20px;
+}
+
+#infoTerra #infoAkira {
+    margin-right:20px;
+}
+
+.leftAbout {
+    float:left;
+}
+
+.rightAbout {
+    float:right;
+}
+
+h2 {
+    font-size:2rem;
+}
+p {
+    color: #343642;
+    font-size: 22.5px;
+    padding: 11.25px;
+    
+    
+}
