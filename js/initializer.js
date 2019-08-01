@@ -7,37 +7,18 @@ var adjectives = [];
 
 function updateArray() {
 
-  var personInput1 = document.getElementById('person-input1').value;
-  var personInput2 = document.getElementById('person-input2').value;
-  var personInput3 = document.getElementById('person-input3').value;
-  
-  var placeInput1 = document.getElementById('place-input1').value;
-  var placeInput2 = document.getElementById('place-input2').value;
-  var placeInput3 = document.getElementById('place-input3').value;
-  
-  var thingInput1 = document.getElementById('thing-input1').value;
-  var thingInput2 = document.getElementById('thing-input2').value;
-  var thingInput3 = document.getElementById('thing-input3').value;
-  
-  var adjectiveInput1 = document.getElementById('adjective-input1').value;
-  var adjectiveInput2 = document.getElementById('adjective-input2').value;
-  var adjectiveInput3 = document.getElementById('adjective-input3').value;
-  
-  people.push(personInput1);
-  people.push(personInput2);
-  people.push(personInput3);
+  for(var i = 0; i < 3; i++){
 
-  places.push(placeInput1);
-  places.push(placeInput2);
-  places.push(placeInput3);
-  
-  things.push(thingInput1);
-  things.push(thingInput2);
-  things.push(thingInput3);
+    var personInputs = document.getElementById('person-input1', 'person-input2', 'person-input3').value;
+    var placeInputs = document.getElementById('place-input1', 'place-input2', 'place-input3').value;
+    var thingInputs = document.getElementById('thing-input1', 'thing-input2', 'thing-input3').value;
+    var adjectiveInputs = document.getElementById('adjective-input1', 'adjective-input2', 'adjective-input3').value;
 
-  adjectives.push(adjectiveInput1);
-  adjectives.push(adjectiveInput2);
-  adjectives.push(adjectiveInput3);
+    people.push(personInputs);
+    places.push(placeInputs);
+    things.push(thingInputs);
+    adjectives.push(adjectiveInputs);
+  }
 }
   
 function saveToLocalStorage() {
