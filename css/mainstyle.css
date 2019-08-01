@@ -1,7 +1,14 @@
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Nunito', sans-serif;
+*/
+
 body {
     font-size:20px;
     background-color:#FF4317;
-    color: #black;
+    color: black;
+
 }
 
 header {
