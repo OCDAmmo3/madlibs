@@ -25,6 +25,7 @@ console.log(stories);
 
 
 
+
 function randomStory() {
   var random = Math.floor(Math.random() * stories.length);
   return stories[random];
@@ -39,6 +40,7 @@ function createParagraph() {
   
   var newStory = new Paragraph(people, adjectives, places, things);
   
+
   var randomPerson = newStory.randomSelector(newStory.person);
   var randomPlace = newStory.randomSelector(newStory.place);
   var randomAdjective = newStory.randomSelector(newStory.adjective);
@@ -73,6 +75,7 @@ function createParagraph() {
   paragraph.push(storyArray[11]);
   paragraph.push(newStory.place[randomPlace]);
   paragraph.push(storyArray[12]);
+
   console.log(paragraph);
 
   return paragraph;
@@ -83,6 +86,7 @@ function createStory() {
   var output = '';
   for (var i = 0; i < story.length; i++) {
     output = `${output}${story[i]}`;
+
   }
 
   return output;
