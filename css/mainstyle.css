@@ -5,9 +5,10 @@ font-family: 'Nunito', sans-serif;
 */
 
 body {
-    font-size:20px;
+    font-size: 20px;
     background-color:#FF4317;
     color: black;
+    font-family: 'Nunito';
 
 }
 
@@ -174,7 +175,7 @@ h2 {
     left: 50%;
     margin: auto;
     transform: translate(-50%, -50%);
-    background-image: url('images/akira.jpg');
+    font-family: 'Permanent Marker';
 }
 
 /* ==============Animation============= */
