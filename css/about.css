@@ -1,10 +1,11 @@
+
 /*
 font-family: 'Pacifico', cursive;
 font-family: 'Permanent Marker', cursive;
 font-family: 'Nunito', sans-serif;
 */
 
-html {
+body{
     font-size:20px;
     background-color:gray;
     
@@ -20,9 +21,28 @@ header {
     background-size: cover;
     background-position: center;  */
 
+
+.navbar {
+    width: 100%;
+    background-color: #A8D7EB;
+    height: 100px;
+    color: #343642;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
-#navBar {
-    background-color:skyblue;
+.brand-link {
+    color: #273382;
+    text-decoration: none;
+    font-size: 4rem;
+    padding: 10px;
+}
+
+.nav-links {
+    color: #273382;
+    position: fixed;
+    top: 5%;
+    right: 35%;
 }
 
 nav h1 {
@@ -122,7 +142,9 @@ button {
 
 a {
     text-decoration:none;
-    color:#a8d7eb;
+    color:#273382;
+    font-size: 40px;
+    padding:5px;
 }
 
 h3 {
