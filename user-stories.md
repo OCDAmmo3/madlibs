@@ -61,7 +61,7 @@
 <p>As a developer, I want to create clear code for so that I can problem solve and easily be able to debug the program.<p>
 <ul>
 <li>Clear & specific comments</li>
-<li>Proper formatting & whitespace</li>
+<li>Proper formatting & #F9F9FAspace</li>
 <li>Semantic markup</li>
 <li>Clean reusable code</li>
 <li>Clear purpose for function & file</li>

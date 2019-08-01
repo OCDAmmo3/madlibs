@@ -1,6 +1,7 @@
-html {
+body {
     font-size:20px;
-    background-color:grey;
+    background-color:#273382;
+    color: ##343642;
 }
 
 header {
@@ -8,34 +9,27 @@ header {
     justify-content:center;
 }
 
-#navBar {
-    background-color:skyblue;
+.navbar {
+    width: 100%;
+    background-color: #A8D7EB;
+    height: 100px;
+    color: #343642;
+    position: fixed;
+    top: 0;
 }
 
-nav h1 {
-    font-size:5rem;
-    background-color:skyblue;
-    position:absolute;
-    top:25px;
-    left:2%;
-    border:solid #343642 1px;
-    padding:10px;
+.brand-link {
+    color: #273382;
+    text-decoration: none;
+    font-size: 4rem;
+    padding: 10px;
 }
 
-nav ul {
-    position:absolute;
-    top:0px;
-    right:0px;
-    border-bottom:solid #343642 1px;
-    border-left:solid #343642 1px;
-    background-color:skyblue;
-}
-
-nav li {
-    display:block;
-    text-align:center;
-    font-size:1.4rem;
-    padding:5px 10px 5px 10px;
+.nav-links {
+    color: #273382;
+    position: fixed;
+    top: 5%;
+    right: 44%;
 }
 
 #instructions {
@@ -46,11 +40,12 @@ nav li {
 ol {
     padding:20px;
     margin-top:150px;
-    background-color:lightGrey;
+    background-color:#343642;
     font-size:1.1rem;
     display:block;
     list-style:decimal inside;
     border:solid #343642 1px;
+    color: #F9F9FA;
 }
 
 ol li {
@@ -58,13 +53,14 @@ ol li {
 }
 
 form {
-    margin-top:20px;
-    padding:10px;
-    border:solid #343642 1px;
-    width:60%;
-    display:flex;
-    justify-content:center;
-    background-color:lightGrey;
+    margin: 20px 0 50px 0;
+    padding: 10px;
+    border: solid #343642 1px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: #F9F9FA;
+    position: relative;
 }
 
 #form {
@@ -78,6 +74,7 @@ form {
     border:solid #343642 1px;
     padding:10px;
     background-color:#F9F9FA;
+    color: #343642;
 }
 
 input {
@@ -98,18 +95,26 @@ input:last-of-type {
 }
 
 #buttons {
-    display:flex;
-    justify-content:center;
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    bottom: -45px;
 }
 
 button {
-    font-size:1.2rem;
-    padding:5px;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 860px;
+    color: #A8D7EB;
+    background: #343642;
+    border: solid 1px #A8D7EB;
 }
 
 a {
-    text-decoration:none;
-    color:#343642;
+    text-decoration: none;
+    color: #273382;
+    margin-left: 10px;
+    font-size: 2rem;
 }
 
 h3 {
