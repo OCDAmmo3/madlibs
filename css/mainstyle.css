@@ -5,9 +5,10 @@ font-family: 'Nunito', sans-serif;
 */
 
 body {
-    font-size:20px;
+    font-size: 20px;
     background-color:#FF4317;
     color: black;
+    font-family: 'Nunito', sans-serif;
 
 }
 
@@ -171,17 +172,22 @@ h2 {
 #storyBlock {
     position: absolute;
     top: 50%;
-    left: 25%;
-    right: 25%;
-    margin: auto;
-    /* transform: translate(-50%, -50%); */
+    left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%, -50%);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.6rem;
+    border: inset 15px;
     color:white;
+    padding: 30px;
+    color: white;
+    background-color: black;
 }
 
 /* ==============Animation============= */
 
 .form-pulse {
-    animation: pulse 5s infinite;
+    animation: pulse 10s infinite;
     animation-name: form-pulse;
 }
 
@@ -192,16 +198,16 @@ h2 {
   }
   50% {
     background-color: black;
-    color: black;
+    color: white;
   }
   100% {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
 }
 
 .pulse {
-  animation: pulse 5s infinite;
+  animation: pulse 10s infinite;
   animation-name: button-pulse;
 }
 
