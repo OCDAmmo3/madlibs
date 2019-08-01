@@ -38,39 +38,34 @@ function createParagraph() {
 
   var newStory = new Paragraph(people, adjectives, places, things);
 
-  var randomPerson = newStory.randomSelector(newStory.person);
-  var randomPlace = newStory.randomSelector(newStory.place);
-  var randomAdjective = newStory.randomSelector(newStory.adjective);
-  var randomThing = newStory.randomSelector(newStory.thing);
-
   var storyArray = randomStory();
 
   var paragraph = [];
 
   paragraph.push(storyArray[0]);
-  paragraph.push(newStory.person[randomPerson]);
+  paragraph.push(newStory.person[newStory.randomSelector()]);
   paragraph.push(storyArray[1]);
-  paragraph.push(newStory.place[randomPlace]);
+  paragraph.push(newStory.place[newStory.randomSelector()]);
   paragraph.push(storyArray[2]);
-  paragraph.push(newStory.adjective[randomAdjective]);
+  paragraph.push(newStory.adjective[newStory.randomSelector()]);
   paragraph.push(storyArray[3]);
-  paragraph.push(newStory.thing[randomThing]);
+  paragraph.push(newStory.thing[newStory.randomSelector()]);
   paragraph.push(storyArray[4]);
-  paragraph.push(newStory.adjective[randomAdjective]);
+  paragraph.push(newStory.adjective[newStory.randomSelector()]);
   paragraph.push(storyArray[5]);
-  paragraph.push(newStory.person[randomPerson]);
+  paragraph.push(newStory.person[newStory.randomSelector()]);
   paragraph.push(storyArray[6]);
-  paragraph.push(newStory.adjective[randomAdjective]);
+  paragraph.push(newStory.adjective[newStory.randomSelector()]);
   paragraph.push(storyArray[7]);
-  paragraph.push(newStory.thing[randomThing]);
+  paragraph.push(newStory.thing[newStory.randomSelector()]);
   paragraph.push(storyArray[8]);
-  paragraph.push(newStory.person[randomPerson]);
+  paragraph.push(newStory.person[newStory.randomSelector()]);
   paragraph.push(storyArray[9]);
-  paragraph.push(newStory.thing[randomThing]);
+  paragraph.push(newStory.thing[newStory.randomSelector()]);
   paragraph.push(storyArray[10]);
-  paragraph.push(newStory.place[randomPlace]);
+  paragraph.push(newStory.place[newStory.randomSelector()]);
   paragraph.push(storyArray[11]);
-  paragraph.push(newStory.place[randomPlace]);
+  paragraph.push(newStory.place[newStory.randomSelector()]);
   paragraph.push(storyArray[12]);
 
   console.log(paragraph);
