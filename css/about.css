@@ -166,6 +166,8 @@ img {
 
 #abouts {
     margin-top:200px;
+    position:relative;
+    
 }
 
 #infoJon, #infoJames {
@@ -200,7 +202,7 @@ section{
     position: relative;
 }
 
-p#jon{
+p.jon{
     margin-left:350px;
     margin-top: -225px;
     margin-right:350px;
@@ -210,22 +212,35 @@ p#terra{
     margin-right:300px;
     margin-left:350px;
 }
-p#james{
+p.james{
     margin-left:350px;
     margin-top: -230px;
     margin-right:350px;
 }
 p#akira{
     margin-top:-230px;
+
     margin-right:300px; 
     margin-left:350px;
     text-align: left;
 }
-h3#a{
+h3.a{
     margin-left:0px;
 }
 
-    
+form#feedback{
+    margin-left: 100px;
+    position: absolute;
+    bottom: -200px;
+    left: 200px;
+   }
+
+#something{
+    display:block;
+}
+.clearfix{
+    clear: both;
+    overflow:hidden;
 }
 
 h3 {
