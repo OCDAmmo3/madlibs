@@ -1,4 +1,3 @@
-
 /*
 font-family: 'Pacifico', cursive;
 font-family: 'Permanent Marker', cursive;
@@ -7,44 +6,45 @@ font-family: 'Nunito', sans-serif;
 
 body{
     font-size:20px;
-
-    background-color:rgb(167, 166, 166);
-    
-
+    background-color:#FF4317;
+    font-family: 'Nunito', sans-serif;
 }
 
 header {
     display:flex;
     justify-content:center;
 }
- /* body {
-    background-image: url('../images/storyPage1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;  */
-
 
 .navbar {
     width: 100%;
     background-color: #A8D7EB;
     height: 100px;
-    color: #343642;
     position: fixed;
     top: 0;
     z-index: 1;
 }
+
 .brand-link {
-    color: #273382;
+    color: #FF4317;
     text-decoration: none;
-    font-size: 4rem;
+    font-size: 5rem;
     padding: 10px;
+    margin-left:10px;
 }
 
 .nav-links {
-    color: #273382;
     position: fixed;
-    top: 5%;
+    top: 30px;
     right: 35%;
+}
+
+.nav-links a{
+    margin-left:10px;
+    margin-right:10px;
+    text-decoration:none;
+    font-size: 40px;
+    padding:5px;
+    color: #FF4317;
 }
 
 nav h1 {
@@ -88,10 +88,6 @@ ol {
     border:solid black 1px;
 }
 
-ol li {
-    padding:5px 0px 5px 0px;
-}
-
 form {
     margin-top:20px;
     padding:10px;
@@ -124,6 +120,27 @@ input {
     padding:5px;
 }
 
+#aboutJon, #aboutTerra, #aboutJames, #aboutAkira {
+    box-sizing:border-box;
+    width:45%;
+    margin:0px 2.5% 0px 2.5%;
+    border:inset 6px;
+    height:auto;
+    background-color: #d6d6d6;
+}
+
+.paraPack {
+    line-height:1.1;
+}
+
+#aboutJon, #aboutJames {
+    float:left;
+}
+
+#aboutTerra, #aboutAkira {
+    float:right;
+}
+
 input:first-of-type {
     margin-top:40px;
 }
@@ -132,42 +149,29 @@ input:last-of-type {
     margin-bottom:40px;
 }
 
-#buttons {
-    display:flex;
-    justify-content:center;
-}
-
-button {
-    font-size:1.2rem;
-    padding:5px;
-}
-
-a {
-    text-decoration:none;
-    color:#273382;
-    font-size: 40px;
-    padding:5px;
-}
-
 h3 {
-    font-size:1.6rem;
+    font-size:2.6rem;
     color: rgb(48, 46, 69);
-    font-family: cursive;
+    font-family: 'Pacifico', cursive;
     font-style: bolder;
+    text-align:center;
+    margin:10px 0px 10px 0px;
 }
 
 img {
+    display:block;
     width:300px;
     height:auto;
-    padding:11.25px;
-    margin-left:-12px;
-    
+    border:outset 4px;
 }
 
 #abouts {
-    margin-top:200px;
+    margin-top:150px;
     position:relative;
-    
+}
+
+#abouts:last-of-type {
+    margin-bottom:30px;
 }
 
 #infoJon, #infoJames {
@@ -180,80 +184,46 @@ img {
 
 }
 
-.leftAbout {
-    float:left;
-}
-
-.rightAbout {
-    float:right;
-}
-
 h2 {
     font-size:2rem;
 }
+
 p {
     color: #343642;
-    font-size: 22.5px;
-    padding: 11.25px;
-
+    font-size: 1.3rem;
+    padding: 25px;
+    text-align:center;
+    line-height:1.2;
 }
 
-section{
-    position: relative;
-}
-
-p.jon{
-    margin-left:350px;
-    margin-top: -190px;
-    margin-right:350px;
-}
-p.terra{
-    margin-top:-190px;
-    margin-right:300px;
-    margin-left:350px;
-}
-p.james{
-    margin-left:350px;
-    margin-top: -205px;
-    margin-right:350px;
-}
-p.akira{
-    margin-top:-210px;
-    margin-right:300px; 
-    margin-left:350px;
-    text-align: left;
-}
 h3.a{
-    margin-left:0px;
+    margin-left:10px;
 }
 
-form#feedback{
-    margin-left: 100px;
-    position: absolute;
-    bottom: -200px;
-    left: 200px;
-   }
+#feedback{
+    margin-top:30px;
+    margin-bottom:30px;
+    position:flex;
+    justify-content:baseline;
+}
+
+#feedbackForm {
+    height:200px;
+}
 
 #something{
     display:block;
 }
+
 .clearfix{
     clear: both;
     overflow:hidden;
 }
 
-h3 {
-    font-size:1.6rem;
-}
-
-img {
-    width:300px;
-    height:auto;
-}
-
-
-#abouts {
-    margin-top:200px;
+.picPack {
+    text-align:center;
+    display:flex;
+    justify-content:center;
 }
 
 #infoJon, #infoJames {
@@ -264,15 +234,15 @@ img {
     margin-right:20px;
 }
 
-.leftAbout {
-    float:left;
-}
-
-.rightAbout {
-    float:right;
-}
-
 h2 {
     font-size:2rem;
 }
 
+input {
+    padding:10px;
+    font-size:1.3rem;
+}
+
+button {
+    font-size:1.3rem;
+}
