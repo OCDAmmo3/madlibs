@@ -66,3 +66,46 @@ button {
     font-size:1.2rem;
     padding:5px;
 }
+
+/* ==============Animation============= */
+
+
+.form-pulse {
+    animation: pulse 10s infinite;
+    animation-name: form-pulse;
+}
+
+@keyframes form-pulse {
+  0% {
+    background-color: white;
+    color: black;
+  }
+  50% {
+    background-color: black;
+    color: white;
+  }
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
+
+.pulse {
+  animation: pulse 10s infinite;
+  animation-name: button-pulse;
+}
+
+@keyframes button-pulse {
+  0% {
+    background-color: black;
+    color: #A8D7EB;
+  }
+  50% {
+    background-color: #A8D7EB;
+    color: black;
+  }
+  100% {
+    background-color: black;
+    color: #A8D7EB;
+  }
+}

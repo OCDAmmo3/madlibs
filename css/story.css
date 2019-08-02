@@ -15,4 +15,5 @@
     margin: auto;
     transform: translate(-50%, -50%);
     background-image: url('images/akira.jpg');
+    letter-spacing: 2px;
 }
