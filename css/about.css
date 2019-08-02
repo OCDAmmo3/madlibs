@@ -207,8 +207,9 @@ p.jon{
     margin-top: -225px;
     margin-right:350px;
 }
-p#terra{
-    margin-top:-210px;
+
+p.terra{
+    margin-top:-190px;
     margin-right:300px;
     margin-left:350px;
 }
@@ -217,13 +218,14 @@ p.james{
     margin-top: -230px;
     margin-right:350px;
 }
-p#akira{
-    margin-top:-230px;
 
+p.akira{
+    margin-top:-210px;
     margin-right:300px; 
     margin-left:350px;
     text-align: left;
 }
+
 h3.a{
     margin-left:0px;
 }
