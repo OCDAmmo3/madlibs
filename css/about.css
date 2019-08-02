@@ -167,4 +167,20 @@ input {
 
 button {
     font-size:1.3rem;
+    position:relative;
+    top:40%;
+    left:10px;
+    margin-right:10px;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    border:solid black 1px;
+    color:black;
+    background-color:white;
+}
+
+button:hover {
+    color:white;
+    background-color:grey;
+    border:solid white 1px;
 }
