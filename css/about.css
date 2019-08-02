@@ -1,92 +1,10 @@
 /*
-font-family: 'Pacifico', cursive;
+h3 font-family: 'Pacifico', cursive;
 font-family: 'Permanent Marker', cursive;
-font-family: 'Nunito', sans-serif;
+body font-family: 'Nunito', sans-serif;
 */
 
-body{
-    font-size:20px;
-    background-color:#FF4317;
-    font-family: 'Nunito', sans-serif;
-}
 
-header {
-    display:flex;
-    justify-content:center;
-}
-
-.navbar {
-    width: 100%;
-    background-color: #A8D7EB;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-}
-
-.brand-link {
-    color: #FF4317;
-    text-decoration: none;
-    font-size: 5rem;
-    padding: 10px;
-    margin-left:10px;
-}
-
-.nav-links {
-    position: fixed;
-    top: 30px;
-    right: 35%;
-}
-
-.nav-links a{
-    margin-left:10px;
-    margin-right:10px;
-    text-decoration:none;
-    font-size: 40px;
-    padding:5px;
-    color: #FF4317;
-}
-
-nav h1 {
-    font-size:5rem;
-    background-color:#273382;
-    position:absolute;
-    top:25px;
-    left:2%;
-    border:solid black 1px;
-    padding:10px;
-}
-
-nav ul {
-    position:absolute;
-    top:0px;
-    right:0px;
-    border-bottom:solid black 1px;
-    border-left:solid black 1px;
-    background-color:#273382;
-}
-
-nav li {
-    display:block;
-    text-align:center;
-    font-size:1.4rem;
-    padding:5px 10px 5px 10px;
-}
-
-#instructions {
-    display:flex;
-    justify-content:center;
-}
-
-ol {
-    padding:20px;
-    margin-top:150px;
-    background-color:lightGrey;
-    font-size:1.1rem;
-    display:block;
-    list-style:decimal inside;
-    border:solid black 1px;
-}
 
 form {
     margin-top:20px;
@@ -176,7 +94,7 @@ img {
 
 #infoJon, #infoJames {
     margin-left:20px;
-    
+
 }
 
 #infoTerra #infoAkira {
@@ -200,11 +118,15 @@ h3.a{
     margin-left:10px;
 }
 
+
 #feedback{
     margin-top:30px;
     margin-bottom:30px;
     position:flex;
     justify-content:baseline;
+
+h3.a{
+    margin-left:0px;
 }
 
 #feedbackForm {
