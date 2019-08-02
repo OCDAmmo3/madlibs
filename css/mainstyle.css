@@ -12,10 +12,15 @@ body {
 
 }
 
-header {
-    display:flex;
-    justify-content:center;
+/* ==========Nav================ */
+
+a {
+    text-decoration: none;
+    color: #FF4317;
+    margin-left: 10px;
+    font-size: 2rem;
 }
+
 
 .navbar {
     width: 100%;
@@ -41,6 +46,8 @@ header {
     right: 35%;
 }
 
+/* ===================Hero===================== */
+
 #instructions {
     display:flex;
     justify-content:center;
@@ -60,6 +67,8 @@ ol {
 ol li {
     padding:5px 0px 5px 0px;
 }
+
+/* ========================Form==================== */
 
 form {
     margin: 20px 0 50px 0;
@@ -119,12 +128,8 @@ button {
     border: solid 1px #A8D7EB;
 }
 
-a {
-    text-decoration: none;
-    color: #FF4317;
-    margin-left: 10px;
-    font-size: 2rem;
-}
+
+/* ======================About=================== */
 
 h3 {
     font-size:1.6rem;
@@ -158,6 +163,8 @@ img {
 h2 {
     font-size:2rem;
 }
+
+/* =====================Story================= */
 
 .story-section {
     height: 100vh;

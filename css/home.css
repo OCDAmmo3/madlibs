@@ -6,11 +6,12 @@
 ol {
     padding:20px;
     margin-top:150px;
-    background-color:lightGrey;
+    background-color:black;
     font-size:1.1rem;
     display:block;
     list-style:decimal inside;
     border:solid black 1px;
+    color: white;
 }
 
 ol li {
@@ -18,13 +19,14 @@ ol li {
 }
 
 form {
-    margin-top:20px;
-    padding:10px;
-    border:solid black 1px;
-    width:60%;
-    display:flex;
-    justify-content:center;
-    background-color:lightGrey;
+    margin: 20px 0 50px 0;
+    padding: 10px;
+    border: solid black 1px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: relative;
 }
 
 #form {
@@ -58,11 +60,60 @@ input:last-of-type {
 }
 
 #buttons {
-    display:flex;
-    justify-content:center;
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    bottom: -45px;
 }
 
 button {
-    font-size:1.2rem;
-    padding:5px;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 860px;
+    color: #A8D7EB;
+    background: black;
+    border: solid 1px #A8D7EB;
+}
+
+/* ==============Animation============= */
+
+
+.form-pulse {
+    animation: pulse 10s infinite;
+    animation-name: form-pulse;
+}
+
+@keyframes form-pulse {
+  0% {
+    background-color: white;
+    color: black;
+  }
+  50% {
+    background-color: black;
+    color: white;
+  }
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
+
+.pulse {
+  animation: pulse 10s infinite;
+  animation-name: button-pulse;
+}
+
+@keyframes button-pulse {
+  0% {
+    background-color: black;
+    color: #A8D7EB;
+  }
+  50% {
+    background-color: #A8D7EB;
+    color: black;
+  }
+  100% {
+    background-color: black;
+    color: #A8D7EB;
+  }
 }
