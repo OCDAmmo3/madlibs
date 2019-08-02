@@ -63,7 +63,14 @@ input:last-of-type {
 input:hover {
   background-color: black;
   color: white;
+}
 
+input::placeholder {
+    color:black;
+}
+
+input:hover::placeholder {
+    color: white;
 }
 
 #buttons {
